@@ -1,0 +1,11 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299.73 299.92">
+  <g>
+    <ellipse cx="149.94" cy="149.75" rx="81.64" ry="81.87" transform="translate(-61.92 149.23) rotate(-44.79)" style="fill: #fa7b6b"/>
+    <path d="M92.05,91.81a81.19,81.19,0,0,0-23.67,52.71c.91-1,1.84-2,2.8-2.94a81.91,81.91,0,0,1,139.53,63A81.88,81.88,0,0,0,92.05,91.81Z" transform="translate(0.05 0.12)" style="fill: #ef6f65"/>
+    <ellipse cx="149.81" cy="149.85" rx="79.93" ry="80.16" transform="translate(-62.02 149.16) rotate(-44.79)" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 11px"/>
+    <g>
+      <path d="M21.28,278.53A23.05,23.05,0,0,0,47.49,283,22.63,22.63,0,0,0,51,287.54a23,23,0,0,0,32.58,0c25.48-25.51,12.8-78.12,12.8-78.12l-6.1-6.09s-52.62-12.62-78.1,12.89a23,23,0,0,0,4.58,36.07,23.08,23.08,0,0,0,4.54,26.21Z" transform="translate(0.05 0.12)" style="fill: #5d4dd9;stroke: #000;stroke-miterlimit: 10;stroke-width: 11px"/>
+      <path d="M278.34,21.17a23,23,0,0,0-26.21-4.51,22.63,22.63,0,0,0-3.49-4.51,23,23,0,0,0-32.58,0c-25.48,25.51-12.8,78.12-12.8,78.12l6.1,6.09S262,109,287.46,83.44a23,23,0,0,0-4.58-36.07,23,23,0,0,0-4.54-26.2Z" transform="translate(0.05 0.12)" style="fill: #5d4dd9;stroke: #000;stroke-miterlimit: 10;stroke-width: 11px"/>
+    </g>
+  </g>
+</svg>

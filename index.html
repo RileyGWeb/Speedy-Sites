@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AZ Small Business Web Design | Sour Sites </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hand-coded  websites made by a single developer who specializes in small business web design. $0 upfront charge, $150/mo to keep it online. Cancel anytime." />
+    <meta name="keywords" content="small business, web design, cheap, fast, affordable, website, free website" />
+    <link href="reset.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap-grid.min.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap-utilities.min.css" type="text/css" rel="stylesheet">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<main class="container">
+
+    <nav id="desktop_nav" class="d-flex justify-content-between align-items-center py-3">
+        <img class="logo" src="Images/Logo.svg" alt="logo">
+        <ul class="menu-buttons align-items-center d-flex">
+            <li><a class="btn btn-plain" href="#">Home</a></li>
+            <li><a class="btn btn-plain" href="#">Pricing</a></li>
+            <li><a class="btn btn-plain" href="#">About Us</a></li>
+            <li><a class="btn btn-plain" href="#">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary" href="#"><span>Get in touch</span></a>
+    </nav>
+
+    <nav id="mobile_nav" class="align-items-center d-flex flex-column justify-content-between">
+        <div class="menu-header">
+            <img class="logo" src="Images/Logo.svg" alt="logo">
+            <img id="menu-icon" src="Images/menu.svg" alt="menu-item">
+        </div>
+        <ul class="d-grid menu-buttons mx-auto d-none">
+            <li><a class="btn btn-square" href="#">Home</a></li>
+            <li><a class="btn btn-square" href="#">Pricing</a></li>
+            <li><a class="btn btn-square" href="#">About Us</a></li>
+            <li><a class="btn btn-square" href="#">FAQ</a></li>
+        </ul>
+
+        <div class="circle-menu z-1000">
+            <ul class="d-grid menu-buttons">
+                <a class="btn btn-square" href="#"><li>Home</li></a>
+                <a class="btn btn-square" href="#"><li>Pricing</li></a>
+                <a class="btn btn-square" href="#"><li>About Us</li></a>
+                <a class="btn btn-square" href="#"><li>FAQ</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="landing_splash" class="row position-relative">
+        <header class="position-relative p-0">
+            <h1 class="position-relative">Fast. Affordable. Beautiful. <span>Perfect</span> for your small business.</h1>
+            <p class="mt-3">Home-grown websites with a new kind of price model. Check it out <a href="/pricing.html" class="btn-link">here</a>, I think you'll be surprised.</p>
+        </header>
+        <span class="splash-2"></span>
+        <span class="splash-1"></span>
+    </section>
+
+    <section id="select_boxes" class="row">
+        <h3 class="text-center px-3">Select all the things you’d like your website to have.</h3>
+        <div class="checkboxes-container mx-auto d-flex justify-content-center my-3 flex-wrap">
+            
+            <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input checkbox-js">
+                <span class="checkbox">
+                    <span class="check-circle">
+                        <img class="checkmark" src="Images/checkmark.svg" />
+                    </span>
+                    <img class="icon" src="Images/paintbrush.png" />
+                    <span>Beautiful</span>
+                </span>
+            </label>
+
+            <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input checkbox-js">
+                <span class="checkbox">
+                    <span class="check-circle">
+                        <img class="checkmark" src="Images/checkmark.svg" />
+                    </span>
+                    <img class="icon" src="Images/speedometer.png" />
+                    <span>Blazing fast</span>
+                </span>
+            </label>
+
+            <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input checkbox-js">
+                <span class="checkbox">
+                    <span class="check-circle">
+                        <img class="checkmark" src="Images/checkmark.svg" />
+                    </span>
+                    <img class="icon" src="Images/salary.png" />
+                    <span>Cheap</span>
+                </span>
+            </label>
+
+            <label class="checkbox-label">
+                <input type="checkbox" class="checkbox-input checkbox-js">
+                <span class="checkbox">
+                    <span class="check-circle">
+                        <img class="checkmark" src="Images/checkmark.svg" />
+                    </span>
+                    <img class="icon" src="Images/smartphone.png" />
+                    <span>Responsive</span>
+                </span>
+            </label>
+
+            
+            <div class="surprise-popup inactive">
+                <span><h3 class="pb-3 pe-2">No way!</h3>That sounds like exactly the kind of website I make. How about you shoot me an email? I'd love to work with you. :)</span>
+                <div class="check-out-prices">
+                    <a class="btn btn-primary me-3" href="#"><span>Get in touch</span></a>
+                    <p class="align-items-center d-flex">
+                        <span><i><b><em>Or...</em> </b></i>check out my <a class="btn-link" href="/pricing">prices and packages</a></span>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="who_are_we" class="row flex-column align-items-center">
+        <h3 class="text-center mb-5">Who are we?</h3>
+        <div class="person-image-container mb-4">
+            <img src="Images/me.png">
+        </div>
+        <p class="text-center mb-4"><b style="font-size: 18px;"><em>We?</em> I wish... It's just me!</b> My name is Riley, and I’m a professional web designer and developer from Phoenix, Arizona. I specialize in helping small business establish their web precense. I love what I do!</p>
+        <div class="check-out-prices">
+            <a class="btn btn-primary me-3" href="#"><span>Get in touch</span></a>
+            <p class="align-items-center d-flex">
+                <span><i><b><em>Or...</em> </b></i>check out my <a class="btn-link" href="/pricing">prices and packages</a></span>
+            </p>
+        </div>
+    </section>
+</main>
+
+</body>
+<script src="jstemplate.js"></script>
+</html>
