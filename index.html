@@ -2,10 +2,12 @@
 <html>
 <head>
     <title>AZ Small Business Web Design | Sour Sites </title>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hand-coded  websites made by a single developer who specializes in small business web design. $0 upfront charge, $150/mo to keep it online. Cancel anytime." />
     <meta name="keywords" content="small business, web design, cheap, fast, affordable, website, free website" />
+
     <link href="reset.css" type="text/css" rel="stylesheet">
     <link href="bootstrap-grid.min.css" type="text/css" rel="stylesheet">
     <link href="bootstrap-utilities.min.css" type="text/css" rel="stylesheet">
@@ -14,7 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -36,25 +40,19 @@
             <img class="logo" src="Images/Logo.svg" alt="logo">
             <img id="menu-icon" src="Images/menu.svg" alt="menu-item">
         </div>
-        <ul class="d-grid menu-buttons mx-auto d-none">
-            <li><a class="btn btn-square" href="#">Home</a></li>
-            <li><a class="btn btn-square" href="#">Pricing</a></li>
-            <li><a class="btn btn-square" href="#">About Us</a></li>
-            <li><a class="btn btn-square" href="#">FAQ</a></li>
-        </ul>
 
-        <div class="circle-menu z-1000">
-            <ul class="d-grid menu-buttons">
-                <a class="btn btn-square" href="#"><li>Home</li></a>
-                <a class="btn btn-square" href="#"><li>Pricing</li></a>
-                <a class="btn btn-square" href="#"><li>About Us</li></a>
-                <a class="btn btn-square" href="#"><li>FAQ</li></a>
+        <div class="circle-menu z-1000 d-flex">
+            <ul class="menu-buttons">
+                <a class="btn btn-circle-menu" href="#"><li>Home</li></a>
+                <a class="btn btn-circle-menu" href="#"><li>Pricing</li></a>
+                <a class="btn btn-circle-menu" href="#"><li>About Us</li></a>
+                <a class="btn btn-circle-menu" href="#"><li>FAQ</li></a>
             </ul>
         </div>
     </nav>
 
     <section id="landing_splash" class="row position-relative">
-        <header class="position-relative p-0">
+        <header class="position-relative">
             <h1 class="position-relative">Fast. Affordable. Beautiful. <span>Perfect</span> for your small business.</h1>
             <p class="mt-3">Home-grown websites with a new kind of price model. Check it out <a href="/pricing.html" class="btn-link">here</a>, I think you'll be surprised.</p>
         </header>
@@ -63,7 +61,7 @@
     </section>
 
     <section id="select_boxes" class="row">
-        <h3 class="text-center px-3">Select all the things you’d like your website to have.</h3>
+        <h3 class="text-center">Select all the things you’d like your website to have.</h3>
         <div class="checkboxes-container mx-auto d-flex justify-content-center my-3 flex-wrap">
             
             <label class="checkbox-label">
@@ -112,7 +110,8 @@
 
             
             <div class="surprise-popup inactive">
-                <span><h3 class="pb-3 pe-2">No way!</h3>That sounds like exactly the kind of website I make. How about you shoot me an email? I'd love to work with you. :)</span>
+                <span class="close-on-click-js"><img class="close-x" src="Images/close.svg"></span>
+                <span><h3 class="pb-3 pe-2">No way!</h3>That sounds like exactly the kind of website I make. How about you shoot me an email? I'd love to work with you.</span>
                 <div class="check-out-prices">
                     <a class="btn btn-primary me-3" href="#"><span>Get in touch</span></a>
                     <p class="align-items-center d-flex">
@@ -120,8 +119,7 @@
                     </p>
                 </div>
             </div>
-            
-        </div>
+
     </section>
 
     <section id="who_are_we" class="row flex-column align-items-center">
@@ -133,12 +131,13 @@
         <div class="check-out-prices">
             <a class="btn btn-primary me-3" href="#"><span>Get in touch</span></a>
             <p class="align-items-center d-flex">
-                <span><i><b><em>Or...</em> </b></i>check out my <a class="btn-link" href="/pricing">prices and packages</a></span>
+                <span><i><b><em>Or...</em> </b></i><br class="hidden-md-special">check out my <a class="btn-link" href="/pricing">prices and packages</a></span>
             </p>
         </div>
     </section>
 </main>
 
+<span class="close-on-click close-on-click-js hidden"></span>
 </body>
 <script src="jstemplate.js"></script>
 </html>
