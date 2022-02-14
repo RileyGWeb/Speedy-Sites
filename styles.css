@@ -263,6 +263,7 @@ a:hover:before {
     height: 3rem;
     width: 3rem;
     margin-bottom: 1rem;
+    filter: invert(77%) sepia(31%) saturate(182%) hue-rotate(208deg) brightness(102%) contrast(80%);
 }
 .checkbox .check-circle {
     width: 20px;
