@@ -169,9 +169,11 @@ a:hover:before {
     margin-bottom: 10px;
 }
 #mobile_nav ul {
-    top: 16%;
-    left: 32%;
+    top: 24%;
+    right: -25%;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 #mobile_nav .logo {
     padding: 15px;
@@ -591,7 +593,7 @@ img.close-x {
     height: 0;
     width: 0;
     border-radius: 350px;
-    background-color: #5D4DD9;
+    background-color: #796AEF;
     right: -250px;
     top: -340px;
     transition: all 0.3s ease-out;
@@ -599,12 +601,13 @@ img.close-x {
     justify-content: start;
 }
 .circle-menu.show {
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
 }
 .btn-circle-menu li {
     color: #fff;
-    padding: 10px 60px;
+    padding: 10px 40px;
+    text-align: center;
 }
 
 .btn-circle-menu li:after {
@@ -616,11 +619,30 @@ img.close-x {
     background-color: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 36.46%, #FFFFFF 66.15%, rgba(255, 255, 255, 0) 100%);
     background-color: #fff;
 }
+.circle-menu .extra-circle {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 100%;
+    top: 2%;
+    left: 5%;
+    background-color: #5D4DD9;
+}
 
-
+.circle-menu .btn {
+    height: 36px;
+}
 
 
 
 body main.container {
     padding-bottom:40vh
+}
+@media only screen and (max-width:425px) {
+    .circle-menu.show {
+        width: 100vw;
+        height: 100vw;
+        right: calc(-60px - 6vw);
+        top: calc(-2vw - 40vw);
+    }
 }

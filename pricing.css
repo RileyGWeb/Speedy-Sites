@@ -292,7 +292,7 @@ footer a.btn-primary {
 footer ul.menu-buttons {
     margin-bottom: 3em;
 }
-.btn-plain::before, .btn-plain::after {
+footer .btn-plain::before, footer .btn-plain::after {
     background: #ffffff!important;
 }
 
