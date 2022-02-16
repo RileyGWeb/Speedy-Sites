@@ -8,13 +8,14 @@ body {
     background-color: #fff;
     padding: 0;
     box-shadow: 0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 80px rgba(0, 0, 0, 0.07);
-    overflow-x: hidden;
 }
 section.row {
     padding: 4.5rem 2rem;
     background-color:#fff;
     z-index: 70;
     position: relative;
+    margin-left: 0;
+    margin-right: 0;
 }
 nav {
     padding: 0 3rem;
@@ -197,6 +198,8 @@ a:hover:before {
 #desktop_nav {
     z-index: 100;
     border-radius: 0 0 10px 10px;
+    position: sticky;
+    top: 0;
 }
 @media only screen and (max-width: 992px) {
 
@@ -338,7 +341,7 @@ a:hover:before {
 }
 
 #landing_splash {
-    height: 780px;
+    height: 700px;
     padding: 3rem;
     overflow: hidden;
     margin-right: 0;
@@ -378,7 +381,7 @@ span.cover-text {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    width: 58%;
+    width: 62%;
     height: 675px;
     border-radius: 30px;
     padding: 0;
@@ -386,7 +389,7 @@ span.cover-text {
     transform: rotate(-15deg);
     align-self: end;
     bottom: -310px;
-    left: 105px;
+    left: 95px;
 }
 #landing_splash span.splash-2 {
     background-image: url(images/splash2.jpg);
