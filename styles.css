@@ -258,8 +258,8 @@ a:hover:before {
     transition: all 0.15s ease;
     cursor: pointer;
 }
-.checkbox-label {
-    margin: 0;
+.checkbox-label span {
+    user-select: none;
 }
 .checkbox:hover {
     box-shadow: 0 5px 10px rgb(0 0 0 / 10%), inset 0 0 0 2px #5D4DD9;
@@ -560,7 +560,7 @@ span.cover-text {
         height: min-content;
         padding: 2rem 15px;
         border-radius: 0 0 15px 15px;
-        box-shadow: 0 0 4px #ccc;
+        box-shadow: 0 0 4px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 10%);
     }
     #landing_splash header p {
         max-width: 320px;
@@ -575,7 +575,7 @@ span.cover-text {
         bottom: -190px;
         left: 50%;
         border-radius: 20px;
-        margin-left: calc(-180px - 27%);
+        margin-left: -180px;
         background-position-x: 15px;
     }
     #landing_splash span.splash-2 {
@@ -589,7 +589,7 @@ span.cover-text {
 
     #select_boxes {
         border-radius: 15px 15px 0 0;
-        box-shadow: 0 0 4px #ccc;
+        box-shadow: 0 0 4px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 10%);
         margin-top: -15px;
     }
     .checkbox {
@@ -715,10 +715,5 @@ body main.container {
     #mobile_nav ul {
         top: 19%;
         right: -23%;
-    }
-}
-@media only screen and (max-width:330px) {
-    .circle-menu.show {
-        
     }
 }
