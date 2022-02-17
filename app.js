@@ -29,4 +29,18 @@ $(document).ready(function() {
     $("#menu-icon").on("click", function() {
         $(".circle-menu").toggleClass("show");
     });
+
+    $(window).scroll(function() {
+        console.log( $(window).scrollTop() );
+        var windowScrollHeight = $(window).scrollTop();
+        if ( windowScrollHeight > 365 ) {
+            if ( $("#mobile_nav").hasClass("rounded-bottom") == false ) {
+                $("#mobile_nav").addClass("rounded-bottom");
+            } 
+        } else {
+            $("#mobile_nav").removeClass("rounded-bottom");
+        }
+    });
+
+    
 });

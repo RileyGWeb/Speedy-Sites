@@ -3,6 +3,7 @@ body {
     background-color: #EFF0F9;
     color: #0A2145;
     font-family: 'Sarabun', sans-serif;
+    overflow-x: hidden;
 }
 .container {
     background-color: #fff;
@@ -10,7 +11,7 @@ body {
     box-shadow: 0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 80px rgba(0, 0, 0, 0.07);
 }
 section.row {
-    padding: 4.5rem 2rem;
+    padding: 4.5rem 2rem 0rem 2rem;
     background-color:#fff;
     z-index: 70;
     position: relative;
@@ -177,6 +178,7 @@ a:hover:before {
     position: relative;
     display: flex;
     flex-direction: column;
+    font-size: 20px;
 }
 #mobile_nav .logo {
     padding: 15px;
@@ -389,7 +391,7 @@ span.cover-text {
     transform: rotate(-15deg);
     align-self: end;
     bottom: -310px;
-    left: 95px;
+    left: 85px;
 }
 #landing_splash span.splash-2 {
     background-image: url(images/splash2.jpg);
@@ -406,6 +408,14 @@ span.cover-text {
     top: -160px;
     right: 25px;
 }
+.container.faux {
+    overflow-x: hidden;
+    height: 100vh;
+    position: absolute;
+    box-shadow: none;
+}
+
+
 @media only screen and (min-width: 1200px) {
     
 }
@@ -413,6 +423,10 @@ span.cover-text {
 
     #mobile_nav {
         display: none!important;
+    }
+    
+    .container.faux {
+        display:none;
     }
 }
 @media only screen and (max-width: 1400px) {
@@ -441,6 +455,7 @@ span.cover-text {
     #landing_splash {
         height: calc(90vh - 81px);
         padding: 3rem 3.5rem;
+        min-height: 660px;
     }
     #landing_splash span.splash-1 {
         bottom: -280px;
@@ -461,7 +476,8 @@ span.cover-text {
     }
     #landing_splash {
         margin: 0;
-        max-height: 620px;
+        height:600px;
+        min-height: unset;
     }
     #landing_splash span.splash-2 {
         width: 45%;
@@ -477,22 +493,27 @@ span.cover-text {
     #desktop_nav {
         display: none!important;
     }
+
+    .container.faux {
+        left: 50%;
+        margin-left: -360px;
+    }
     
 }
 @media only screen and (max-width: 768px) {
     #landing_splash span.splash-1 {
-        height: 475px;
-        width: 387px;
-        bottom: -150px;
-        left: 75px;
+        width: 467px;
+        bottom: -90px;
+        left: 55px;
         border-radius: 20px;
     }
     #landing_splash span.splash-2 {
         width: 60%;
         right: -275px!important;
     }
-    section#who_are_we {
-        margin: 3rem 15px;
+    .container.faux {
+        left: 50%;
+        margin-left: -270px;
     }
 }
 @media only screen and (max-width: 578px) {
@@ -504,15 +525,31 @@ span.cover-text {
     }
     #landing_splash span.splash-1 {
         left: 0;
+        width: 447px;
+        bottom: -150px;
     }
     #landing_splash span.splash-2 {
         left: 370px;
     }
+    .container.faux {
+        left: 0;
+        margin-left: 0;
+    }
 }
 @media only screen and (max-width: 425px) {
     #landing_splash {
-        height: calc(400px + 15vh);
+        height: calc(500px + 15vh);
         padding: 0;
+    }
+    /* Covers the background when #mobile_nav has a border radius applied to it via scrollTop(); */
+    #landing_splash:before {
+        content: '';
+        background-color: #ffffff;
+        width: 100vw;
+        height: 75px;
+        position: fixed;
+        z-index: 100;
+        top: 0;
     }
     #landing_splash header {
         background-color: #fff;
@@ -522,6 +559,8 @@ span.cover-text {
         z-index: 10;
         height: min-content;
         padding: 2rem 15px;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0 0 4px #ccc;
     }
     #landing_splash header p {
         max-width: 320px;
@@ -548,14 +587,16 @@ span.cover-text {
         left: inherit;
     }
 
+    #select_boxes {
+        border-radius: 15px 15px 0 0;
+        box-shadow: 0 0 4px #ccc;
+        margin-top: -15px;
+    }
     .checkbox {
         height: 5.5rem;
         width: 5.5rem;
         margin: 0.7rem;
     }    
-    section.row {
-        margin: 1.5rem 0;
-    }
 }
 
 .check-out-prices {
@@ -593,6 +634,9 @@ img.close-x {
     }
 }
 
+.rounded-bottom {
+    border-radius: 0 0 15px 15px!important;
+}
 #who_are_we p {
     max-width: 510px;
 }
@@ -604,7 +648,7 @@ img.close-x {
 }
 .circle-menu {
     z-index: 3400;
-    position: absolute;
+    position: relative;
     height: 0;
     width: 0;
     border-radius: 350px;
@@ -645,8 +689,10 @@ img.close-x {
 }
 
 .circle-menu .btn {
-    height: 36px;
+    height: 45px;
 }
+
+
 
 
 
@@ -655,9 +701,24 @@ body main.container {
 }
 @media only screen and (max-width:425px) {
     .circle-menu.show {
-        width: 100vw;
-        height: 100vw;
+        width: 115vw;
+        height: 115vw;
         right: calc(-60px - 6vw);
         top: calc(-2vw - 40vw);
+    }
+    #mobile_nav ul {
+        top: 19%;
+        right: -23%;
+    }
+}
+@media only screen and (max-width:380px) {
+    #mobile_nav ul {
+        top: 19%;
+        right: -23%;
+    }
+}
+@media only screen and (max-width:330px) {
+    .circle-menu.show {
+        
     }
 }
