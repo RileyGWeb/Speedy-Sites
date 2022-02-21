@@ -630,7 +630,9 @@ img.close-x {
         flex-direction: column;
         text-align: center;
         align-items: center;
-        gap: 20px;
+    }
+    .check-out-prices p {
+        margin-top: 20px;
     }
 }
 
