@@ -296,6 +296,35 @@ footer .btn-plain::before, footer .btn-plain::after {
     background: #ffffff!important;
 }
 
-body main.container {
-    padding-bottom:40vh
+section#contact_content p {
+    font-size: 18px;
+    margin: 16px 16px 48px 0;
+}
+
+section#contact_content {
+    max-width: 600px;
+    width:100%;
+    padding: 0 15px;
+    margin: 64px auto;
+}
+
+#contact_content label {
+    font-size: 21px;
+    line-height: 36px;
+}
+#contact_content input.text-field {
+    width: calc(100% - 64px);
+    padding: 16px;
+    border-radius: 12px;;
+    border: solid 2px #001A29;
+    font-size: 18px;
+}
+textarea#subject {    
+    width: calc(100% - 64px);
+    padding: 16px;
+    border-radius: 12px;
+    border: solid 2px #001A29;
+    font-size: 18px;
+    resize: none;
+    height: 200px;
 }
