@@ -418,6 +418,7 @@ img.close-x {
     background-position: center 27px;
     padding-bottom: 25px;
     overflow: visible;
+    width: 100%;
 }
 #what_we_do h3 {
     background-image: url('images/stroke-large.webp');
