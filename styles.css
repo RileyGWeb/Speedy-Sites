@@ -147,7 +147,7 @@ span.cover-text {
 }
 
 #landing_splash header span {
-    background: url(images/stroke-small.png) no-repeat 0px 73px;
+    background: url(images/stroke-small.webp) no-repeat 0px 73px;
     background-size: contain;
     padding: 20px;
     margin: -20px;
@@ -165,14 +165,14 @@ span.cover-text {
     z-index: 10;
 }
 #landing_splash span.splash-1 {
-    background-image: url(images/splash1.jpg);
+    background-image: url(images/splash1.webp);
     width: 62%;
     height: 675px;
     bottom: -310px;
     left: 85px;
 }
 #landing_splash span.splash-2 {
-    background-image: url(images/splash2.jpg);
+    background-image: url(images/splash2.webp);
     width: 38%;
     border-radius: 30px;
     height: 1136px;
@@ -202,7 +202,7 @@ span.cover-text {
 }
 @media only screen and (max-width: 1400px) {
     #landing_splash header span {
-        background: url(images/stroke-small.png) no-repeat 0px 64px;
+        background: url(images/stroke-small.webp) no-repeat 0px 64px;
         background-size: contain;
     }
     #landing_splash header {
@@ -216,7 +216,7 @@ span.cover-text {
 }
 @media only screen and (max-width: 1200px) {
     #landing_splash header span {
-        background: url(images/stroke-small.png) no-repeat 0px 51px;
+        background: url(images/stroke-small.webp) no-repeat 0px 51px;
         background-size: contain;
     }
     #landing_splash header {
@@ -238,7 +238,7 @@ span.cover-text {
 }
 @media only screen and (max-width: 992px) {
     #landing_splash header span {
-        background: url(images/stroke-small.png) no-repeat 0px 51px;
+        background: url(images/stroke-small.webp) no-repeat 0px 51px;
         background-size: contain;
     }
     #landing_splash header {
@@ -412,7 +412,7 @@ img.close-x {
     max-width: 510px;
 }
 #who_are_we h3 {
-    background-image: url('images/stroke-medium.png');    
+    background-image: url('images/stroke-medium.webp');    
     background-size: 240px 28px;
     background-repeat: no-repeat;
     background-position: center 27px;
@@ -420,7 +420,7 @@ img.close-x {
     overflow: visible;
 }
 #what_we_do h3 {
-    background-image: url('images/stroke-large.png');
+    background-image: url('images/stroke-large.webp');
     background-size: 300px 28px;
     background-repeat: no-repeat;
     background-position: center 27px;
