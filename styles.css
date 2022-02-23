@@ -111,7 +111,9 @@
 #select_boxes {
     border-top: none;
     padding: 3rem 1rem;
+    z-index: 50;
 }
+
 
 #landing_splash {
     height: 700px;
@@ -283,7 +285,8 @@ span.cover-text {
     .container.faux {
         left: 50%;
         margin-left: -270px;
-    }#select_boxes .checkboxes-container {
+    }
+    #select_boxes .checkboxes-container {
     max-width: 400px;
     }
     #select_boxes .checkboxes-container {
@@ -408,6 +411,33 @@ img.close-x {
 #who_are_we p {
     max-width: 510px;
 }
+#who_are_we h3 {
+    background-image: url('images/stroke-medium.png');    
+    background-size: 240px 28px;
+    background-repeat: no-repeat;
+    background-position: center 27px;
+    padding-bottom: 25px;
+    overflow: visible;
+}
+#what_we_do h3 {
+    background-image: url('images/stroke-large.png');
+    background-size: 300px 28px;
+    background-repeat: no-repeat;
+    background-position: center 27px;
+    padding-bottom: 25px;
+    overflow: visible;
+}
+
+@media only screen and (max-width:768px) {
+    #who_are_we h3 {
+        background-size: 210px 25px;
+        background-position: center 25px;
+    }
+    #what_we_do h3 {
+        background-size: 270px 26px;
+        background-position: center 23px;
+    }
+}
 .row .person-image-container {
     background-image: url(images/blob.svg);
     width: 200px;
@@ -423,7 +453,7 @@ img.close-x {
 .services-container .service-item {
     max-width: 250px;
     text-align: center;
-    margin: 0 20px 45px 0;
+    margin: 0 10px 45px 10px;
 }
 .services-container h5 {
     margin: 18px 0 6px 0;
