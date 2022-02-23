@@ -108,18 +108,19 @@
 
 
 /* -------- Other -------- */
-.logo {
-    width: 40px;
+#select_boxes {
+    border-top: none;
+    padding: 3rem 1rem;
 }
 
 #landing_splash {
     height: 700px;
-    padding: 3rem;
     overflow: hidden;
     margin-right: 0;
     background-color: #fff;
     position: relative;
     z-index: 0;
+    border-top: none;
 }
 #landing_splash header {
     width: 560px;
@@ -240,7 +241,7 @@ span.cover-text {
     }
     #landing_splash header {
         width: 340px;
-        padding-top: 2.5rem;
+        padding-top: 0rem;
     }
     #landing_splash {
         margin: 0;
@@ -282,6 +283,15 @@ span.cover-text {
     .container.faux {
         left: 50%;
         margin-left: -270px;
+    }#select_boxes .checkboxes-container {
+    max-width: 400px;
+    }
+    #select_boxes .checkboxes-container {
+        max-width: 400px;
+    }
+    .services-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 @media only screen and (max-width: 578px) {
@@ -290,6 +300,7 @@ span.cover-text {
     }
     #landing_splash header {
         width: 320px;
+        padding-top: 2rem;
     }
     #landing_splash span.splash-1 {
         left: 0;
@@ -310,7 +321,7 @@ span.cover-text {
         padding: 0;
     }
     /* Covers the background when #mobile_nav has a border radius applied to it via scrollTop(); */
-    #landing_splash:before {
+    /* #landing_splash:before {
         content: '';
         background-color: #ffffff;
         width: 100vw;
@@ -318,7 +329,7 @@ span.cover-text {
         position: fixed;
         z-index: 100;
         top: 0;
-    }
+    } */
     #landing_splash header {
         background-color: #fff;
         width: 100%;
@@ -329,6 +340,8 @@ span.cover-text {
         padding: 2rem 15px;
         border-radius: 0 0 15px 15px;
         box-shadow: 0 0 4px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 10%);
+        z-index: 20;
+        position: relative;
     }
     #landing_splash header p {
         max-width: 320px;
@@ -402,11 +415,16 @@ img.close-x {
     display: flex;
 }
 
+.services-container {
+    display: flex;
+    justify-content: center;
+}
 
-
-
-
-
-body main.container {
-    padding-bottom:40vh
+.services-container .service-item {
+    max-width: 250px;
+    text-align: center;
+    margin: 0 20px 45px 0;
+}
+.services-container h5 {
+    margin: 18px 0 6px 0;
 }

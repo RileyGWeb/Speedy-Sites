@@ -8,13 +8,14 @@ body {
     background-color: #fff;
     padding: 0;
     box-shadow: 0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 80px rgba(0, 0, 0, 0.07);
-    overflow-x: hidden;
 }
 section.row {
-    padding: 0 3rem 4.5rem 3rem;
+    padding: 3rem;
+    margin: 0;
     background-color:#fff;
     position: relative;
     z-index: 20;
+    border-top: 3px solid rgba(0,0,0,0.04);
 }
 nav {
     padding: 0 3rem;
@@ -22,7 +23,9 @@ nav {
     position: sticky;
     top: 0;
     background-color: #fff;
-    border-radius: 0 0 10px 10px;
+}
+nav .logo {
+    width: 40px;
 }
 
 
@@ -34,6 +37,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 {font-size: 56px}
 h2 {font-size: 40px}
 h3 {font-size: 36px}
+h4 {font-size: 24px}
+h5 {font-size: 18px}
+p {font-size: 16px!important;line-height: 22px;}
 
 @media only screen and (max-width: 1400px) {
     h1 {font-size: 48px}
@@ -43,14 +49,11 @@ h3 {font-size: 36px}
 @media only screen and (max-width: 1200px) {
     h1 {font-size: 36px}
     h2 {font-size: 30px}
-    h3 {font-size: 24px}
-
-    p {font-size: 16px!important;}
+    h3 {line-height: 34px}
 }
 @media only screen and (max-width: 992px) {
     h1 {font-size: 30px}
     h2 {font-size: 26px}
-    h3 {font-size: 20px}
 }
 @media only screen and (max-width: 578px) {
     h1 {font-size: 28px}
@@ -200,6 +203,9 @@ a:hover:before {
 #desktop_nav {
     z-index: 100;
 }
+#desktop_nav ul {
+    margin-left: auto;
+}
 
 .check-out-prices {
     display: flex;
@@ -212,9 +218,6 @@ a:hover:before {
 
     #mobile_nav {
         display: none!important;
-    }
-    .check-out-prices {
-        justify-content: start;
     }
     
 }
@@ -229,9 +232,14 @@ a:hover:before {
         margin-top: 20px;
     }
 }
+@media only screen and (max-width: 992px) {
+    section.row {
+        padding: 3rem 1rem;
+    }
+}
 @media only screen and (max-width: 425px) {
     section.row {
-        margin: 1.5rem 0;
+        padding: 3rem 0.5rem;
     }
 }
 
@@ -284,6 +292,11 @@ a:hover:before {
 .circle-menu .btn {
     height: 45px;
 }
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
 @media only screen and (max-width:425px) {
     .circle-menu.show {
         width: 115vw;
@@ -303,23 +316,42 @@ a:hover:before {
     }
 }
 
-footer {
+footer.row {
     background-color: #1E1E1E;
     padding: 1.5em 4em;
+    margin: 0;
+    z-index: 20;
+    position: relative;
 }
 footer a.btn, footer p {
     color: #ffffff;
-    padding: 10px 20px;
-}
-footer a.btn-primary {
-    position: absolute;
-    right: 0;
+    padding-right: 20px;
 }
 footer ul.menu-buttons {
     margin-bottom: 3em;
 }
 footer .btn-plain::before, footer .btn-plain::after {
     background: #ffffff!important;
+}
+footer .footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    footer.row {
+        padding: 1.5rem;
+    }
+    footer.row p {
+        padding: 0 1rem 0 0;
+    }
+    footer.row .button-contain a {
+        margin: 16px auto;
+    }
 }
 
 .hidden {

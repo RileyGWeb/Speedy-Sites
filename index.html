@@ -5,8 +5,8 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hand-coded, beautiful websites for small business only. I stick around for maintinence, too. Cancel anytime." />
-    <meta name="keywords" content="small business, web design, cheap, fast, affordable, website, free website" />
+    <meta name="description" content="Hand-coded, beautiful websites for small business, with free maintinence for life. Cancel anytime, no hidden fees or charges." />
+    <meta name="keywords" content="small business, web design, cheap, fast, affordable, website, free website, fast website, custom website" />
 
     <link href="reset.css" type="text/css" rel="stylesheet">
     <link href="bootstrap-grid.min.css" type="text/css" rel="stylesheet">
@@ -32,15 +32,11 @@
             <a class="btn btn-circle-menu" href="#"><li>packages</li></a>
             <img src="images/menu-line.svg">
             <a class="btn btn-circle-menu" href="#"><li>About Us</li></a>
-            <img src="images/menu-line.svg">
-            <a class="btn btn-circle-menu" href="#"><li>FAQ</li></a>
         </ul>
     </div>
 </div>
 
 <main class="container">
-
-    
 
     <nav id="desktop_nav" class="d-flex justify-content-between align-items-center py-3">
         <img class="logo" src="images/logo.svg" alt="logo">
@@ -48,7 +44,6 @@
             <li><a class="btn btn-plain" href="#">Home</a></li>
             <li><a class="btn btn-plain" href="packages.html">Packages</a></li>
             <li><a class="btn btn-plain" href="#">About Us</a></li>
-            <li><a class="btn btn-plain" href="#">FAQ</a></li>
         </ul>
         <a class="btn btn-primary" href="#"><span>Get in touch</span></a>
     </nav>
@@ -56,14 +51,14 @@
     <nav id="mobile_nav" class="align-items-center d-flex flex-column justify-content-between">
         <div class="menu-header">
             <img class="logo" src="images/logo.svg" alt="logo">
-            <img id="menu-icon" src="images/menu.svg" alt="menu-item">
+            <img id="menu-icon" src="images/menu.svg" alt="menu-icon">
         </div>
     </nav>
 
     <section id="landing_splash" class="row position-relative mt-0">
         <header>
-            <h1 class="position-relative">Fast. Affordable. Beautiful. <span>Perfect</span> for your small business.</h1>
-            <p class="mt-3">Home-grown websites with a new kind of price model. Check it out <a href="/packages.html" class="btn-link">here</a>, I think you'll be surprised.</p>
+            <h1 id="title">Fast. Affordable. Beautiful. <span>Perfect</span> for your small business.</h1>
+            <p id="subtitle" class="mt-3">Home-grown websites with a new kind of price model. Check it out <a href="/packages.html" class="btn-link">here</a>, I think you'll be surprised.</p>
         </header>
         <span class="cover-text"></span>
         <span class="splash splash-2"></span>
@@ -72,15 +67,15 @@
 
     <section id="select_boxes" class="row">
         <h3 class="text-center">Select all the things you’d like your website to have.</h3>
-        <div class="checkboxes-container mx-auto d-flex justify-content-center my-3 flex-wrap">
+        <div class="checkboxes-container mx-auto d-flex justify-content-center mt-3 flex-wrap">
             
             <label class="checkbox-label">
                 <input type="checkbox" class="checkbox-input checkbox-js">
                 <span class="checkbox">
                     <span class="check-circle">
-                        <img class="checkmark" src="images/checkmark.svg" />
+                        <img class="checkmark" src="images/checkmark.svg" alt="checkmark" />
                     </span>
-                    <img class="icon" src="images/2Beautiful.svg" />
+                    <img class="icon" src="images/2Beautiful.svg" alt="Beautiful Website"/>
                     <span>Beautiful</span>
                 </span>
             </label>
@@ -89,9 +84,9 @@
                 <input type="checkbox" class="checkbox-input checkbox-js">
                 <span class="checkbox">
                     <span class="check-circle">
-                        <img class="checkmark" src="images/checkmark.svg" />
+                        <img class="checkmark" src="images/checkmark.svg" alt="checkmark"/>
                     </span>
-                    <img class="icon" src="images/1BlazingFast.svg" />
+                    <img class="icon" src="images/1BlazingFast.svg" alt="Fast Website" />
                     <span>Blazing fast</span>
                 </span>
             </label>
@@ -100,10 +95,10 @@
                 <input type="checkbox" class="checkbox-input checkbox-js">
                 <span class="checkbox">
                     <span class="check-circle">
-                        <img class="checkmark" src="images/checkmark.svg" />
+                        <img class="checkmark" src="images/checkmark.svg" alt="checkmark"/>
                     </span>
-                    <img class="icon" src="images/3Affordable.svg" />
-                    <span>Cheap</span>
+                    <img class="icon" src="images/3Affordable.svg" alt="Affordable Website" />
+                    <span>Affordable</span>
                 </span>
             </label>
 
@@ -111,9 +106,9 @@
                 <input type="checkbox" class="checkbox-input checkbox-js">
                 <span class="checkbox">
                     <span class="check-circle">
-                        <img class="checkmark" src="images/checkmark.svg" />
+                        <img class="checkmark" src="images/checkmark.svg" alt="checkmark"/>
                     </span>
-                    <img class="icon" src="images/4Easy.svg" />
+                    <img class="icon" src="images/4Easy.svg" alt="Responsive Website" />
                     <span>Responsive</span>
                 </span>
             </label>
@@ -130,7 +125,7 @@
                     </p>
                 </div>
             </div>
-
+        </div>
     </section>
 
     <section id="who_are_we" class="row flex-column align-items-center">
@@ -146,6 +141,49 @@
             </p>
         </div>
     </section>
+    
+    <section id="what_we_do" class="row flex-column">
+        <h3 class="text-center mb-5">What do "we" do?</h3>
+        <div class="services-container">
+
+            <div class="service-item">
+                <img src="images/what_we_do1.svg" alt="service-descriptive-icon" />
+                <h5 class="service" id="service-name">Fully responsive</h5>
+                <p id="service-description">Your website will fit on any and all devices, from mobile phones to jumbo-trons!</p>
+            </div>
+
+            <div class="service-item">
+                <img src="images/what_we_do2.svg" alt="service-descriptive-icon" />
+                <h5 class="service" id="service-name">Maximum Speed</h5>
+                <p id="service-description">The longer your website takes to load, the more customers you lose. My websites are lightning fast.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="images/what_we_do3.svg" alt="service-descriptive-icon" />
+                <h5 class="service" id="service-name">Dedicated Support</h5>
+                <p id="service-description">You’re not just hiring me to build your website. You’re hiring me to edit and maintain it, <b>forever.</b></p>
+            </div>
+
+        </div>
+        <div class="check-out-prices">
+            <a class="btn btn-primary me-3" href="#"><span>Get in touch</span></a>
+            <p class="align-items-center d-flex">
+                <span><i><b><em>Or...</em> </b></i><br class="hidden-md-special">check out my <a class="btn-link" href="/packages">prices and packages</a></span>
+            </p>
+        </div>
+    </section>
+
+    <footer class="row">
+        <ul class="menu-buttons align-items-center justify-content-center d-flex">
+            <li><a class="btn btn-plain" href="#">Home</a></li>
+            <li><a class="btn btn-plain" href="#">Packages</a></li>
+            <li><a class="btn btn-plain" href="#">About Us</a></li>
+        </ul>
+        <div class="footer-info">
+            <p style="min-width: 225px;">Copyright 2022 Speedy Sites - All rights resevred</p>
+            <a class="btn btn-primary" href="#"><span>Get in touch</span></a>
+        </div>
+    </footer>
 </main>
 
 </body>
