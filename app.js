@@ -33,9 +33,25 @@ $(document).ready(function() {
 
     function toggleCircleMenu() {
         $(".circle-menu").toggleClass("show");
+        $(".container.faux").toggleClass("show");
+        $(".circle-menu-buttons").toggleClass("show");
+        // if ( $(".circle-menu").hasClass("show") ) {
+        //     $(".circle-menu-buttons").toggleClass("show");
+        //     window.setTimeout(function() {
+        //         $(".circle-menu").toggleClass("show");
+        //     }, 450);
+        //     window.setTimeout(function() {
+        //         $(".container.faux").toggleClass("show");
+        //     }, 800);
+        // } else {
+        //     $(".container.faux").toggleClass("show");
+        //     $(".circle-menu").toggleClass("show");
+        //     window.setTimeout(function() {
+        //         $(".circle-menu-buttons").toggleClass("show");
+        //     }, 800);
+        // }
     }
     $("#menu-icon").on("click", toggleCircleMenu);
-    $(".container.faux .close-x").on("click", toggleCircleMenu);
     $(".container.faux").on("click", toggleCircleMenu);
 
 

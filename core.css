@@ -130,6 +130,7 @@ body {
     background-color: #EFF0F9;
     color: #0A2145;
     font-family: 'Sarabun', sans-serif;
+    overflow-x: hidden;
 }
 .container {
     background-color: #fff;
@@ -390,14 +391,14 @@ a:hover:before {
     background-color: #796AEF;
     right: -250px;
     top: -340px;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
     align-items: center;
     justify-content: start;
-    transform: scale(0);
+    transform: translateX(100vw);
     position: fixed;
 }
 .circle-menu.show {
-    transform: scale(1);
+    transform: translateX(0);
 }
 .btn-circle-menu {
     color: #fff;
@@ -427,10 +428,17 @@ a:hover:before {
 .container.faux {
     overflow-x: hidden;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     box-shadow: none;
-    z-index: 100;
+    transform: translateY(-100vh);
     background-color: transparent;
+    z-index: 800;
+    width: 100vw!important;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+.container.faux.show {
+    transform: translateY(0);
 }
 
 @media only screen and (min-width: 992px) {
@@ -448,7 +456,7 @@ a:hover:before {
     padding: 15px 20px;
     border-radius: 40px;
     transition: all 0.3s;
-    margin-top: 12px;
+    margin-top: 24px;
     text-align: center;
 }
 
@@ -458,14 +466,24 @@ a:hover:before {
     box-shadow: inset 0 0 0 2px rgb(255 255 255 / 40%);
 }
 
-.circle-menu ul.menu-buttons {
-    z-index: 10;
+.container.faux ul.circle-menu-buttons {
+    z-index: 4400;
     font-size: 22px;
     position: absolute;
-    left: 20%;
-    bottom: 20%;
+    top: 130px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    left:  50%;
+    margin-left: -86px;
+    transition: all 0.15s ease-in;
+    transform: translateX(100vw);
+}
+.container.faux ul.circle-menu-buttons.show {
+    transform: translateX(0);
+}
+.container.faux ul.circle-menu-buttons img {
+    margin: 16px 0;
 }
 .circle-menu li {
     display: inline-flex;
@@ -477,10 +495,10 @@ img {
 }
 @media only screen and (max-width:425px) {
     .circle-menu.show {
-        width: 180vw;
-        height: 180vw;
-        right: -70vw;
-        top: -60vw;
+        width: 750px;
+        height: 750px;
+        right: -220px;
+        top: -300px;
     }
     #mobile_nav ul {
         top: 19%;
