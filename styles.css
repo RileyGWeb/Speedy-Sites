@@ -179,26 +179,9 @@ span.cover-text {
     top: -160px;
     right: 25px;
 }
-.container.faux {
-    overflow-x: hidden;
-    height: 100vh;
-    position: absolute;
-    box-shadow: none;
-}
-
 
 @media only screen and (min-width: 1200px) {
     
-}
-@media only screen and (min-width: 992px) {
-
-    #mobile_nav {
-        display: none!important;
-    }
-    
-    .container.faux {
-        display:none;
-    }
 }
 @media only screen and (max-width: 1400px) {
     #landing_splash header span {
@@ -265,10 +248,6 @@ span.cover-text {
         display: none!important;
     }
 
-    .container.faux {
-        left: 50%;
-        margin-left: -360px;
-    }
     
 }
 @media only screen and (max-width: 768px) {
@@ -281,10 +260,6 @@ span.cover-text {
     #landing_splash span.splash-2 {
         width: 60%;
         right: -275px!important;
-    }
-    .container.faux {
-        left: 50%;
-        margin-left: -270px;
     }
     #select_boxes .checkboxes-container {
     max-width: 400px;
@@ -312,10 +287,6 @@ span.cover-text {
     }
     #landing_splash span.splash-2 {
         left: 370px;
-    }
-    .container.faux {
-        left: 0;
-        margin-left: 0;
     }
 }
 @media only screen and (max-width: 425px) {

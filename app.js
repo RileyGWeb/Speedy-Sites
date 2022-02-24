@@ -31,9 +31,13 @@ $(document).ready(function() {
     $(".checkbox-js").on("click", checkboxShow);
     $(".close-on-click-js").on("click", checkboxHide);
 
-    $("#menu-icon").on("click", function() {
+    function toggleCircleMenu() {
         $(".circle-menu").toggleClass("show");
-    });
+    }
+    $("#menu-icon").on("click", toggleCircleMenu);
+    $(".container.faux .close-x").on("click", toggleCircleMenu);
+    $(".container.faux").on("click", toggleCircleMenu);
+
 
     $(window).scroll(function() {
         console.log( $(window).scrollTop() );
