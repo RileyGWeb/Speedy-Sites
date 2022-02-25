@@ -31,28 +31,29 @@ $(document).ready(function() {
     $(".checkbox-js").on("click", checkboxShow);
     $(".close-on-click-js").on("click", checkboxHide);
 
-    function toggleCircleMenu() {
-        $(".circle-menu").toggleClass("show");
-        $(".container.faux").toggleClass("show");
-        $(".circle-menu-buttons").toggleClass("show");
-        // if ( $(".circle-menu").hasClass("show") ) {
-        //     $(".circle-menu-buttons").toggleClass("show");
-        //     window.setTimeout(function() {
-        //         $(".circle-menu").toggleClass("show");
-        //     }, 450);
-        //     window.setTimeout(function() {
-        //         $(".container.faux").toggleClass("show");
-        //     }, 800);
-        // } else {
-        //     $(".container.faux").toggleClass("show");
-        //     $(".circle-menu").toggleClass("show");
-        //     window.setTimeout(function() {
-        //         $(".circle-menu-buttons").toggleClass("show");
-        //     }, 800);
-        // }
+    function openCircleMenu() {
+        $(".circle-menu").addClass("show");
+        $(".container.faux").addClass("show");
+        $(".circle-menu-buttons").addClass("show");        
+
+        $("#menu-icon").off().on("click", closeCircleMenu);
+        window.setTimeout(function() {
+            $("body").on("click", closeCircleMenu);
+            $(".container.faux").on("click", closeCircleMenu);
+        }, 100);
     }
-    $("#menu-icon").on("click", toggleCircleMenu);
-    $(".container.faux").on("click", toggleCircleMenu);
+    function closeCircleMenu() {
+        $(".circle-menu").removeClass("show");
+        $(".container.faux").removeClass("show");
+        $(".circle-menu-buttons").removeClass("show");
+
+        $("#menu-icon").off().on("click", openCircleMenu);
+        window.setTimeout(function() {
+            $("body").off();
+            $(".container.faux").off();
+        }, 100);
+    }
+    $("#menu-icon").on("click", openCircleMenu);
 
 
     $(window).scroll(function() {
