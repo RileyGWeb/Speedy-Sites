@@ -5,11 +5,6 @@
     
 }
 @media only screen and (max-width: 992px) {
-    .check-out-prices {
-        flex-direction: column;
-        text-align: center;
-        align-items: start;
-    }
     .check-out-prices p {
         padding-top: 20px;
         text-indent: 0;
@@ -44,6 +39,9 @@
     max-width: 750px;
     margin: 4rem auto;
 }
+#about_content p {
+    text-indent: 32px;
+}
 .person-image-container {
     background-image: url(images/blob.svg);
     width: 200px;
@@ -53,6 +51,5 @@
 .person-image-container img {
     width: 94%;
     margin-left: 4%;
-    display:none;
 }
 
