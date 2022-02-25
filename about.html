@@ -19,35 +19,36 @@
 </head>
 <body>
 
+<div class="container faux">
+    <div class="circle-menu z-1000 d-flex">
+        <div class="extra-circle"></div>
+    </div>
+    <ul class="circle-menu-buttons">
+        <li><a class="btn btn-circle-menu" href="index.html">Home</a></li>
+        <img src="images/menu-line.svg">
+        <li><a class="btn btn-circle-menu" href="packages.html">Packages</a></li>
+        <img src="images/menu-line.svg">
+        <li><a class="btn btn-circle-menu" href="packages.html">About Us</a></li>
+        <a class="btn btn-circle-menu-cta" href="contact.html">Get in touch</a>
+    </ul>
+</div>  
+
 <main class="container">
 
     <nav id="desktop_nav" class="d-flex justify-content-between align-items-center py-3">
-        <img class="logo" src="./images/logo.svg" alt="logo">
+        <a href="index.html"><img class="logo" src="images/logo-wordmark.svg" alt="logo"></a>
         <ul class="menu-buttons align-items-center d-flex">
-            <li><a class="btn btn-plain" href="#">Home</a></li>
-            <li><a class="btn btn-plain" href="#">Packages</a></li>
-            <li><a class="btn btn-plain" href="#">About Us</a></li>
+            <li><a class="btn btn-plain" href="index.html">Home</a></li>
+            <li><a class="btn btn-plain" href="packages.html">Packages</a></li>
+            <li><a class="btn btn-plain" href="about.html">About Us</a></li>
         </ul>
-        <a class="btn btn-primary" href="#"><span>Get in touch</span></a>
+        <a class="btn btn-primary" href="contact.html"><span>Get in touch</span></a>
     </nav>
 
     <nav id="mobile_nav" class="align-items-center d-flex flex-column justify-content-between">
         <div class="menu-header">
-            <img class="logo" src="./images/logo.svg" alt="logo">
-            <img id="menu-icon" src="./images/menu.svg" alt="menu-item">
-        </div>
-        <ul class="d-grid menu-buttons mx-auto d-none">
-            <li><a class="btn btn-square" href="#">Home</a></li>
-            <li><a class="btn btn-square" href="#">Packages</a></li>
-            <li><a class="btn btn-square" href="#">About Us</a></li>
-        </ul>
-
-        <div class="circle-menu z-1000">
-            <ul class="d-grid menu-buttons">
-                <a class="btn btn-square" href="#"><li>Home</li></a>
-                <a class="btn btn-square" href="#"><li>Packages</li></a>
-                <a class="btn btn-square" href="#"><li>About Us</li></a>
-            </ul>
+            <a href="index.html"><img class="logo" src="images/logo-wordmark.svg" alt="logo"></a>
+            <img id="menu-icon" src="images/menu.svg" alt="menu-icon">
         </div>
     </nav>
 
@@ -65,7 +66,7 @@
             <div class="check-out-prices mt-4">
                 <a class="btn btn-primary me-3" href="#"><span>Get in touch</span></a>
                 <p class="align-items-center d-flex m-0">
-                    <span><i><b><em>Or...</em> </b></i>check out my <a class="btn-link" href="/packages">prices and packages</a></span>
+                    <span><i><b><em>Or...</em> </b></i>check out my <a class="btn-link" href="packages">prices and packages</a></span>
                 </p>
             </div>
         </div>

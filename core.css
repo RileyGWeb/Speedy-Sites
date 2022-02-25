@@ -371,6 +371,11 @@ a:hover:before {
         left: 50%;
         margin-left: -360px;
     }
+    
+    #desktop_nav {
+        display: none!important;
+    }
+
 }
 @media only screen and (max-width: 425px) {
     section.row {

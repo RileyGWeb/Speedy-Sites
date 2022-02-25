@@ -244,11 +244,6 @@ span.cover-text {
         left: 55px;
     }
     
-    #desktop_nav {
-        display: none!important;
-    }
-
-    
 }
 @media only screen and (max-width: 768px) {
     #landing_splash span.splash-1 {
