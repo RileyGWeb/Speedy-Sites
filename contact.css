@@ -4,8 +4,8 @@ section#contact_content p {
 }
 
 section#contact_content {
-    max-width: 600px;
-    width:100%;
+    max-width: calc(100% - 30px);
+    width: calc(100vw - 30px);
     padding: 0 15px;
     margin: 64px auto;
     
@@ -16,18 +16,57 @@ section#contact_content {
     line-height: 36px;
 }
 #contact_content input.text-field {
-    width: calc(100% - 64px);
+    width: calc(100% - 36px);
     padding: 16px;
-    border-radius: 12px;;
+    border-radius: 12px;
     border: solid 2px #001A29;
     font-size: 18px;
 }
 textarea#subject {    
-    width: calc(100% - 64px);
+    width: calc(100% - 36px);
     padding: 16px;
     border-radius: 12px;
     border: solid 2px #001A29;
     font-size: 18px;
     resize: none;
     height: 200px;
+}
+
+button.submit {
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: #FA7B6B;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    min-width: 85px;
+    border:none;
+    cursor: pointer;
+    margin-top: 16px;
+}
+button.submit:before {
+    content: '';
+    position: absolute;
+    background-color: #5D4DD9;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+button.submit:hover:before {
+    transform: translate3d(100%,0,0);
+}
+button.submit span {
+    position: relative;
+    mix-blend-mode: hard-light;
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px){
+    section#contact_content {
+        max-width: 600px;
+    }
 }
