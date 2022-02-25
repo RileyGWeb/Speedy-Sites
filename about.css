@@ -1,3 +1,25 @@
+
+#about_content p {
+    text-indent: 32px;
+}
+
+#about_content {
+    max-width: 750px;
+    margin: 4rem auto;
+}
+.person-image-container {
+    background-image: url(images/blob.svg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+.person-image-container img {
+    width: 94%;
+    margin-left: 4%;
+}
+
+
+
 @media only screen and (min-width: 992px) {
     .check-out-prices {
         justify-content: start;
@@ -5,7 +27,7 @@
     
 }
 @media only screen and (max-width: 992px) {
-    .check-out-prices p {
+    #about_content .check-out-prices p {
         padding-top: 20px;
         text-indent: 0;
     }
@@ -33,23 +55,3 @@
         margin: 1.5rem 0;
     }
 }
-
-
-#about_content {
-    max-width: 750px;
-    margin: 4rem auto;
-}
-#about_content p {
-    text-indent: 32px;
-}
-.person-image-container {
-    background-image: url(images/blob.svg);
-    width: 200px;
-    height: 200px;
-    display: flex;
-}
-.person-image-container img {
-    width: 94%;
-    margin-left: 4%;
-}
-
