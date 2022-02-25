@@ -1,0 +1,62 @@
+section.row {
+    border: none;
+}
+
+/* Copied from about page */
+
+#prices_info p {
+    text-indent: 32px;
+}
+
+#prices_info {
+    max-width: 750px;
+    margin: 4rem auto;
+}
+.person-image-container {
+    background-image: url(images/blob.svg);
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+.person-image-container img {
+    width: 94%;
+    margin-left: 4%;
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    .check-out-prices {
+        justify-content: start;
+    }
+    
+}
+@media only screen and (max-width: 992px) {
+    #prices_info .check-out-prices p {
+        padding-top: 20px;
+        text-indent: 0;
+    }
+    #prices_info {
+        padding: 0 2rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #prices_info {
+        flex-direction: column
+    }
+    #prices_info .left-column {
+        display: flex;
+        align-self: center;
+    }
+    #prices_info .left-column .person-image-container {
+        margin-right: 0rem!important;
+    }
+}
+@media only screen and (max-width: 578px) {
+
+}
+@media only screen and (max-width: 425px) {
+    section.row {
+        margin: 1.5rem 0;
+    }
+}
