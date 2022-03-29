@@ -22,7 +22,7 @@ section#contact_content {
     border: solid 2px #001A29;
     font-size: 18px;
 }
-textarea#subject {    
+textarea#message {    
     width: calc(100% - 36px);
     padding: 16px;
     border-radius: 12px;
