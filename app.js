@@ -6,8 +6,8 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 $(document).ready(function() {
     var numberChecked = 0;
     function checkboxShow() {
-        $(this).siblings().toggleClass("checked");
-        if ( $(this).siblings().hasClass("checked") ) {
+        $(this).find(".checkbox").toggleClass("checked");
+        if ( $(this).find(".checkbox").hasClass("checked") ) {
             numberChecked++;
         } else {
             numberChecked--; 
