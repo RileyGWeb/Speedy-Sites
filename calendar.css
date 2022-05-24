@@ -1,0 +1,24 @@
+#calendar_head {
+    text-align: center;
+    max-width: 810px;
+    margin: 64px auto -12px auto;
+    padding: 0 24px;
+}
+#calendar_head p {
+    padding: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+main.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#meeting_calendar {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+footer.row {
+    margin-top: auto;
+}

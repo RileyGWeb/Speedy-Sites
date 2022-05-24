@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AZ Small Business Web Design | Speedy Sites </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hand-coded  websites made by a single developer who specializes in small business web design. $0 upfront charge, $150/mo to keep it online. Cancel anytime." />
+    <meta name="keywords" content="small business, web design, cheap, fast, affordable, website, free website" />
+    <link href="reset.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap-grid.min.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap-utilities.min.css" type="text/css" rel="stylesheet">
+    <link href="core.css" type="text/css" rel="stylesheet">
+    <link href="calendar.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="images/logo16x16.png">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-221401093-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-221401093-1');
+</script></head>
+<body>
+
+<div class="container faux">
+    <div class="circle-menu z-1000 d-flex">
+        <div class="extra-circle"></div>
+    </div>
+    <ul class="circle-menu-buttons">
+        <li><a class="btn btn-circle-menu" href="index.html">Home</a></li>
+        <img src="images/menu-line.svg">
+        <li><a class="btn btn-circle-menu" href="packages.html">Packages</a></li>
+        <img src="images/menu-line.svg">
+        <li><a class="btn btn-circle-menu" href="about.html">About Us</a></li>
+        <a class="btn btn-circle-menu-cta" href="contact.html">Get in touch</a>
+    </ul>
+</div>  
+
+<main class="container">
+
+
+    <nav id="desktop_nav" class="d-flex justify-content-between align-items-center py-3">
+        <a href="index.html"><img class="logo" src="images/logo-wordmark.svg" alt="logo"></a>
+        <ul class="menu-buttons align-items-center d-flex">
+            <li><a class="btn btn-plain" href="index.html">Home</a></li>
+            <li><a class="btn btn-plain" href="packages.html">Packages</a></li>
+            <li><a class="btn btn-plain" href="about.html">About Us</a></li>
+        </ul>
+        <a class="btn btn-primary" href="contact.html"><span>Get in touch</span></a>
+    </nav>
+
+    <nav id="mobile_nav" class="align-items-center d-flex flex-column justify-content-between">
+        <div class="menu-header">
+            <a href="index.html"><img class="logo" src="images/logo-wordmark.svg" alt="logo"></a>
+            <img id="menu-icon" src="images/menu.svg" alt="menu-icon">
+        </div>
+    </nav>
+
+    <header id="calendar_head">
+        <h3>Let's hop on a call.</h3>
+        <p>Feel free to use the calendar below to schedule a meeting with me. I'm excited to work with you!</p>
+    </header>
+
+    <section id="meeting_calendar">
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/speedy-sites/website-interest-meeting?text_color=0a2145&primary_color=5d4dd9" style="min-width:320px;min-height:650px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+    </section>
+
+    <footer class="row" loading="lazy">
+        <ul class="menu-buttons align-items-center justify-content-center d-flex">
+            <li><a class="btn btn-plain" href="index.html">Home</a></li>
+            <li><a class="btn btn-plain" href="packages.html">Packages</a></li>
+            <li><a class="btn btn-plain" href="about.html">About Us</a></li>
+        </ul>
+        <div class="footer-info">
+            <span style="display: flex;align-items: flex-end;">
+                <img src="images/logo.svg">
+                <p style="min-width: 225px;margin-left: 15px;">Copyright 2022 Speedy Sites - All rights reserved</p>
+            </span>
+            <a class="btn btn-primary" href="contact.html"><span>Get in touch</span></a>
+        </div>
+    </footer>
+</main>
+
+</body>
+<script src="app.js"></script>
+</html>
