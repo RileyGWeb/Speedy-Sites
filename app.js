@@ -66,7 +66,15 @@ $(document).ready(function() {
         } else {
             $("#mobile_nav").removeClass("rounded-bottom");
         }
-    });
+
+        $('.waypoint').each(function (i) {
+            var bottom_of_object = $(this).offset().top + ($(this).outerHeight() * 1.25);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_object) {
+                $(this).addClass('visible');
+            }
+        });
+    });    
 
     
 });

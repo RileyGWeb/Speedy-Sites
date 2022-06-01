@@ -29,7 +29,7 @@
     margin: 2em 0 1em;
     opacity: 0.2;
 }
-#simple_post_logo p {
+.spaced-letter-style {
     font-weight: 500;
     font-size: 24px;
     line-height: 38px;
@@ -163,6 +163,15 @@
         width: 275px;
         height: 325px;
     }
+    #testimonial_content {
+        flex-direction: column!important;
+        align-items: center;
+        padding: 20px;
+    }
+    #testimonial_content img.noah {
+        max-width: 200px;
+        margin: 30px 0 0 0!important;
+    }
 }
 @media only screen and (max-width: 768px) {
     #case_study_details {
@@ -185,3 +194,8 @@
     content:url(images/Purple-check.svg);
     margin-right: 8px;
 }
+
+#testimonial_content img.noah {
+    margin-left: 30px
+}
+
