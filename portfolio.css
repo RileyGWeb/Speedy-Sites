@@ -85,3 +85,103 @@
         width:340px;
     }
 }
+
+#recent_work p {
+    max-width: 450px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#case_study_details {
+    display: flex;
+    margin-top: 64px;
+}
+#case_study_details .divider {
+    width: 1px;
+    background-color: rgba(0,0,0,0.2);
+    margin: 0 64px;
+}
+
+.site-card {
+    background-color: #fff;
+    box-shadow: 2px 2px 9px #e5e5e5;
+    position: relative;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 325px;
+    overflow: hidden;
+    transition: all 0.2s;
+    top: 0;
+    left: 0;
+    border: 1px solid #ddd;
+}
+.site-card:hover {
+    top: -4px;
+    left: -4px;
+    box-shadow: 6px 6px 9px #e5e5e5;
+}
+
+.site-card a {
+    position: relative;
+    height: 100%;
+}
+.site-card img {
+    position: absolute;
+    bottom: calc(0 - 195px);
+    transition: all 4s;
+}
+.site-card .thumbnail {
+    height: 100%;
+    background-position-y: 0;
+    transition: all 7s ease-out;
+    background-size: 100%;
+}
+@media only screen and (min-width:992px) {
+    .site-card:hover .thumbnail {
+        background-position-y: 100%;
+    }
+}
+@media only screen and (max-width:991px) {
+    .site-card.visible .thumbnail {
+        background-position-y: 100%;
+    }
+    #case_study_details {
+        margin: 4em 1.5em;
+    }
+    #case_study_details .site-card {
+        width: 275px;
+        height: 200px;
+    }
+    #case_study_details .divider {
+        margin: 0 2.25em 0 1.5em;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #case_study_details .site-card {
+        width: 275px;
+        height: 325px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #case_study_details {
+        flex-direction: column-reverse;
+    }
+    #case_study_details .site-card {
+        width: 100%;
+        height: 325px;
+        margin: 48px 0;
+    }
+}
+
+#list_details ul li {
+    font-size: 18px;
+    margin: 12px 8px 12px 12px;
+    line-height: 24px;
+    text-indent: -26px;
+}
+#list_details ul li:before {
+    content:url(images/Purple-check.svg);
+    margin-right: 8px;
+}
