@@ -412,7 +412,64 @@ img.close-x {
     width: 200px;
     height: 200px;
     display: flex;
+    background-size: 100%;
 }
+
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 2em 3em 1em;
+}
+
+.person-card .id {
+    text-align: center;
+}
+
+.person-card .id h4 {
+    margin-bottom: 6px;
+}
+.person-card .person-image-container img {
+    height: 200px;
+    width: 200px;
+    padding-left: 4px;
+    border-radius: 100px
+}
+@media only screen and (max-width: 578px) {
+    .row .person-image-container {
+        width: 150px;
+        height: 150px;
+    }
+    .person-card .person-image-container img {
+        height: 150px;
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .row .person-image-container {
+        width: 125px;
+        height: 125px;
+    }
+    .person-card .person-image-container img {
+        height: 125px;
+        width: 125px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .row .person-image-container {
+        width: 150px;
+        height: 150px;
+    }
+    .person-card .person-image-container img {
+        height: 150px;
+        width: 150px;
+    }
+    #who_are_we > .d-flex {
+        flex-direction: column;
+    }
+}
+
+
 
 .services-container {
     display: flex;
