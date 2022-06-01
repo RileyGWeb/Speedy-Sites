@@ -409,9 +409,18 @@ img.close-x {
 }
 .row .person-image-container {
     background-image: url(images/blob.svg);
+    background-repeat: no-repeat;
     width: 200px;
     height: 200px;
     display: flex;
+    margin: 0 15px;
+    padding: 0 4px;
+}
+
+.row .person-image-container img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
 }
 
 .services-container {
