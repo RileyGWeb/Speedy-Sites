@@ -130,6 +130,9 @@ blockquote {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .free-package .price-card {
+        padding-top: 3rem!important;
+    }
     .price-card {
         padding: 1.25rem !important;
     }
@@ -168,6 +171,13 @@ blockquote {
     #prices_info .left-column .person-image-container {
         margin-right: 0rem!important;
     }
+    .limited-time {
+        padding: 7.4rem 5.9rem 0.4rem 8.9rem;
+        line-height: 20px;
+    }
+    .limited-time span {
+        font-size: 26px;
+    }
 }
 @media only screen and (max-width: 578px) {
     .price-card {
@@ -175,6 +185,12 @@ blockquote {
     }
 }
 @media only screen and (max-width: 425px) {
+    .free-package .price-card {
+        padding-top: 4rem!important;
+    }
+}
+
+@media only screen and (max-width: 490px) {
     section.row {
         margin: 1.5rem 0;
     }
@@ -189,6 +205,15 @@ blockquote {
         font-size: 18px;
         padding: 12px 0px 12px 16px;
         text-indent: 24px;
+    }
+    .free-package .price-card {
+        padding-top: 4rem!important;
+    }
+    .limited-time {
+        white-space: nowrap;
+    }
+    .limited-time span {
+        font-size: 23px
     }
 }
 @media only screen and (max-width: 390px) {
