@@ -129,6 +129,16 @@ blockquote {
     100% {transform: rotate(26deg) scale(1);}
 }
 
+hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    opacity: 0.179;
+    background: #333;
+    margin: 2rem 0;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .free-package .price-card {
         padding-top: 3rem!important;
@@ -140,6 +150,11 @@ blockquote {
 @media only screen and (min-width: 992px) {
     .check-out-prices {
         justify-content: start;
+    }
+    .price-card.one-time {
+        width: 30%;
+        margin: 0 1.6%;
+        height: 100%;
     }
     
 }
