@@ -94,13 +94,14 @@ blockquote {
     position: absolute;
     overflow: hidden;
     right: 0;
+    top:0;
     border-radius: 1rem;
 }
 .limited-time {
     position: relative;
     background-color: #5D4DD9;
     color: #fff;
-    padding: 7.5rem 6.6rem 1rem 10.2rem;
+    padding: 7.3rem 5.9rem 0.4rem 10.2rem;
     transform: rotate(26deg) scale(1);
     right: -120px;
     top: -110px;
@@ -109,9 +110,10 @@ blockquote {
     animation: limited-bounce 3s infinite linear;
     animation-timing-function: ease-in-out;
     user-select: none;
+    white-space: nowrap;
 }
 .limited-time span {
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -138,6 +140,7 @@ hr {
     margin: 2rem 0;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
+
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .free-package .price-card {
@@ -187,11 +190,11 @@ hr {
         margin-right: 0rem!important;
     }
     .limited-time {
-        padding: 7.4rem 5.9rem 0.4rem 8.9rem;
+        padding: 7.8rem 5.9rem 0.4rem 8.9rem;
         line-height: 20px;
     }
     .limited-time span {
-        font-size: 26px;
+        /* font-size: 26px; */
     }
 }
 @media only screen and (max-width: 578px) {
@@ -228,7 +231,7 @@ hr {
         white-space: nowrap;
     }
     .limited-time span {
-        font-size: 23px
+        /* font-size: 23px */
     }
 }
 @media only screen and (max-width: 390px) {
