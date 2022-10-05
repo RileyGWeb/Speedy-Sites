@@ -138,12 +138,23 @@
     transition: all 7s ease-out;
     background-size: 100%;
 }
+.hover-me {
+    opacity: 0.5;
+    position: absolute;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+    top: -30px;
+}
 @media only screen and (min-width:992px) {
     .site-card:hover .thumbnail {
         background-position-y: 100%;
     }
 }
 @media only screen and (max-width:991px) {
+    .hover-me {
+        display: none;
+    }
     .site-card.visible .thumbnail {
         background-position-y: 100%;
     }

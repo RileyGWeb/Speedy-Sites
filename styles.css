@@ -127,7 +127,7 @@
     border-top: none;
 }
 #landing_splash header {
-    width: 560px;
+    width: 490px;
     position: fixed;
     z-index: 5;
 }
@@ -227,12 +227,12 @@ span.cover-text {
         background-size: contain;
     }
     #landing_splash header {
-        width: 340px;
+        width: 310px;
         padding-top: 0rem;
     }
     #landing_splash {
         margin: 0;
-        height:600px;
+        height: 630px;
         min-height: unset;
     }
     #landing_splash span.splash-2 {
@@ -274,7 +274,7 @@ span.cover-text {
         padding: 0 15px;
     }
     #landing_splash header {
-        width: 320px;
+        width: 250px;
         padding-top: 2rem;
     }
     #landing_splash span.splash-1 {
@@ -436,40 +436,6 @@ img.close-x {
     padding-left: 4px;
     border-radius: 100px
 }
-@media only screen and (max-width: 578px) {
-    .row .person-image-container {
-        width: 150px;
-        height: 150px;
-    }
-    .person-card .person-image-container img {
-        height: 150px;
-        width: 150px;
-    }
-}
-@media only screen and (max-width: 425px) {
-    .row .person-image-container {
-        width: 125px;
-        height: 125px;
-    }
-    .person-card .person-image-container img {
-        height: 125px;
-        width: 125px;
-    }
-}
-@media only screen and (max-width: 375px) {
-    .row .person-image-container {
-        width: 150px;
-        height: 150px;
-    }
-    .person-card .person-image-container img {
-        height: 150px;
-        width: 150px;
-    }
-    #who_are_we > .d-flex {
-        flex-direction: column;
-    }
-}
-
 
 
 .services-container {

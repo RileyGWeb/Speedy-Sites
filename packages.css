@@ -61,6 +61,9 @@ blockquote {
   .text-small {
     font-size: 0.9rem !important;
   }
+  .text-medium {
+    font-size: 1.5rem !important;
+  }
   
   .custom-separator {
     width: 5rem;
