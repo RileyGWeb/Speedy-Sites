@@ -407,14 +407,6 @@ img.close-x {
         background-position: center 23px;
     }
 }
-.row .person-image-container {
-    background-image: url(images/blob.svg);
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    background-size: 100%;
-}
 
 .person-card {
     display: flex;

@@ -1,0 +1,410 @@
+.ad-landing {
+    overflow: hidden;
+}
+.ad-landing .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ad-landing hr {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(198, 194, 225, 0.2) 0.07%, #C6C2E1 53.2%, rgba(198, 194, 225, 0.2) 100.07%);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    border-style: none;
+    border-width: 0;
+    margin: 64px 0;
+}
+
+form input.text,
+form textarea {
+    border: 1px solid #0A2145;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+}
+
+/* splash */
+#splash {
+    margin: 15vh 0;
+}
+#splash h2 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+}
+#splash p {
+    font-size: 20px;
+}
+#splash s {
+    opacity: 0.4;
+}
+#splash .col-left {
+    margin-right: 2rem;
+}
+#splash .col-left * {
+    margin-bottom: 20px;
+}
+#splash .person-image-container,
+#splash .person-image-container img {
+    height: 300px;
+    width: 300px;
+}
+
+/* form */
+#contact_1 > * {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+#contact_1 form input {
+    width: 100%;
+}
+#contact_2 > * {
+    margin-bottom: 1rem;
+}
+#contact_2 button.submit {
+    margin-top: 0;
+    width: 100%;
+}
+
+/*  fancy scroll section */
+.fancy-scroll #desktop {
+    
+    align-items: center;
+}
+.fancy-scroll #desktop .question {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 6rem;
+}
+.fancy-scroll #desktop .question > * {
+    width: 50%;
+}
+.fancy-scroll #desktop .question > p {
+    position: relative;
+}
+.fancy-scroll #desktop .question > p:before {
+    content: '';
+    width: calc(100% + 3rem);
+    height: calc(100% + 3rem);
+    margin: -2rem;
+    max-height: calc(100% + 3rem);
+    background-color: #fff;
+    position: absolute;
+    transition: all 1s ease-out; 
+    transform: rotate(180deg);
+    filter: blur(1rem);
+}
+.fancy-scroll #desktop .question > p.scrolled:before {
+    content: '';
+    width: calc(100% + 3rem);
+    height: calc(100% + 3rem);
+    margin: -2rem;
+    max-height: 0;
+    background-color: #fff;
+    position: absolute;
+    transition: all 1s ease-out; 
+    transform: rotate(180deg);
+    filter: blur(1rem);
+}
+
+/* timer */
+section#timer {
+    position: relative;
+}
+section#timer:before {
+    content:'';
+    position: absolute;
+    width: 180%;
+    margin-left: -40%;
+    background: linear-gradient(90.04deg, #5D4DD9 3.17%, #92E4EF 96.87%);
+    height: 100%;
+}
+section#timer p {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    padding: 1.5rem;
+    font-weight: 400!important;
+    font-size: 36px;
+    text-align: center;
+}
+
+/* prices area */
+#prices_area {
+    display: flex;
+    gap: 2rem;
+}
+#prices_area > * {
+    width: 50%;
+}
+
+/* custom radio */
+  .wrapper{
+    display: inline-flex;
+    background: #fff;
+    height: 64px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    box-sizing: border-box;
+    gap: 20px;
+  }
+  .wrapper .option{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+  }
+  .wrapper .option .dot{
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+  }
+  .wrapper .option .dot::before{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #5D4DD9;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #option-1:checked:checked ~ .option-1,
+  #option-2:checked:checked ~ .option-2{
+    border-color: #5D4DD9;
+    background: #5D4DD9;
+  }
+  #option-1:checked:checked ~ .option-1 .dot,
+  #option-2:checked:checked ~ .option-2 .dot{
+    background: #fff;
+  }
+  #option-1:checked:checked ~ .option-1 .dot::before,
+  #option-2:checked:checked ~ .option-2 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+  }
+  .wrapper .option span{
+    font-size: 20px;
+    color: #808080;
+  }
+  #option-1:checked:checked ~ .option-1 span,
+  #option-2:checked:checked ~ .option-2 span{
+    color: #fff;
+  }
+
+/* price cards */
+.rounded-lg {
+    border-radius: 1rem !important;
+  }
+  
+  .text-small {
+    font-size: 0.9rem !important;
+  }
+  .text-medium {
+    font-size: 1.5rem !important;
+  }
+  
+  .custom-separator {
+    width: 5rem;
+    height: 6px;
+    border-radius: 1rem;
+    background-color: #5D4DD9;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.2em;
+  }
+  .h6, h6 {
+    font-size: 1rem;
+}
+
+.price-card img {
+    height: 16px;
+    margin-bottom: -2px;
+    margin-right: 6px;
+}
+.price-card .text-muted img {
+    height: 13px;
+    margin-right: 8px;
+    margin-left: 1px;
+}
+.price-card ul li {
+    text-align: left;
+    line-height: 26px;
+}
+.limited-time-wrap {
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top:0;
+    border-radius: 1rem;
+}
+.limited-time {
+    position: relative;
+    background-color: #5D4DD9;
+    color: #fff;
+    padding: 7.3rem 5.9rem 0.4rem 10.2rem;
+    transform: rotate(26deg) scale(1);
+    right: -120px;
+    top: -110px;
+    line-height: 25px;
+    transition: all 0.1s;
+    animation: limited-bounce 3s infinite linear;
+    animation-timing-function: ease-in-out;
+    user-select: none;
+    white-space: nowrap;
+}
+.limited-time span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@keyframes limited-bounce {
+    0% {transform: rotate(26deg) scale(1);}
+    
+    60% {transform: rotate(26deg) scale(1);}
+    62.5% {transform: rotate(26deg) scale(1.1);}
+    65% {transform: rotate(26deg) scale(1);}
+
+    70% {transform: rotate(26deg) scale(1);}
+    72.5% {transform: rotate(26deg) scale(1.1);}
+    75% {transform: rotate(26deg) scale(1);}
+
+    100% {transform: rotate(26deg) scale(1);}
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    opacity: 0.179;
+    background: #333;
+    margin: 2rem 0;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .free-package .price-card {
+        padding-top: 3rem!important;
+    }
+    .price-card {
+        padding: 1.25rem !important;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .check-out-prices {
+        justify-content: start;
+    }
+    .price-card.one-time {
+        width: 30%;
+        margin: 0 1.6%;
+        height: 100%;
+    }
+    
+}
+@media only screen and (max-width: 992px) {
+    #prices_info .check-out-prices p {
+        padding-top: 20px;
+        text-indent: 0;
+        left: 12px;
+        position: relative;
+    }
+    #prices_info {
+        padding: 0 2rem;
+    }
+    .price-card h2 {
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #packages_splash p {
+        padding: 24px 0;
+    }
+    #prices_info .columns{
+        flex-direction: column
+    }
+    #prices_info .left-column {
+        display: flex;
+        align-self: center;
+    }
+    #prices_info .left-column .person-image-container {
+        margin-right: 0rem!important;
+    }
+    .limited-time {
+        padding: 7.8rem 5.9rem 0.4rem 8.9rem;
+        line-height: 20px;
+    }
+    .limited-time span {
+        /* font-size: 26px; */
+    }
+}
+@media only screen and (max-width: 578px) {
+    .price-card {
+        padding: 2rem !important;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .free-package .price-card {
+        padding-top: 4rem!important;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    section.row {
+        margin: 1.5rem 0;
+    }
+    h3 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    #prices_info {
+        padding: 0 0.25rem;
+    }
+    blockquote {
+        font-size: 18px;
+        padding: 12px 0px 12px 16px;
+        text-indent: 24px;
+    }
+    .free-package .price-card {
+        padding-top: 4rem!important;
+    }
+    .limited-time {
+        white-space: nowrap;
+    }
+    .limited-time span {
+        /* font-size: 23px */
+    }
+}
+@media only screen and (max-width: 390px) {
+    .price-card {
+        padding: 1rem !important;
+    } 
+    #prices .row {
+        padding: 0!important;
+    }
+}
+/* end price cards */
