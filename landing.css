@@ -53,6 +53,7 @@ form textarea {
 #splash .person-image-container img {
     height: 300px;
     width: 300px;
+    background-repeat: no-repeat;
 }
 
 /* form */
@@ -370,6 +371,26 @@ hr {
     .price-card h2 {
         font-size: 36px;
     }
+
+    #splash {
+        margin: 10vh 2rem;
+    }
+    #splash h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    #splash .person-image-container, 
+    #splash .person-image-container img {
+        height: 225px;
+        width: 225px;
+    }
+    section:not(#timer) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    section#timer {
+        margin-left: 0!important;
+    }
 }
 @media only screen and (max-width: 768px) {
     #packages_splash p {
@@ -392,10 +413,61 @@ hr {
     .limited-time span {
         /* font-size: 26px; */
     }
+
+    #splash {
+        margin: 2rem;
+        flex-direction: column;
+    }
+    #splash .person-image-container {
+        margin: 1rem auto!important;
+    }
+    #splash h1 {
+        font-size: 68px;
+    }
+}
+@media only screen and (min-width: 578px) and (max-width: 768px) {
+    .price-card {
+        padding: 2rem 1rem!important;
+    }
+    .price-card p.mb-5 {
+        margin-bottom: 1.5rem!important;
+    }
+    .price-card hr {
+        margin-bottom: 1.5rem!important;
+    }
+    #contact_2 .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+    #contact_2 .wrapper .option {
+        padding: 1rem 0rem;
+        justify-content: center;
+        gap: 1rem;
+    }
 }
 @media only screen and (max-width: 578px) {
     .price-card {
         padding: 2rem !important;
+    }
+
+    #splash h1 {
+        font-size: 45px;
+    }
+    #splash .person-image-container {
+        height: 100%;
+        width: 100%;
+        max-width: 400px;
+    }
+    #splash .person-image-container img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #contact_1 form > div {
+        flex-direction: column;
+    }
+    #contact_1 form > div input {
+        width: calc(100% - 20px);
     }
 }
 @media only screen and (max-width: 425px) {
