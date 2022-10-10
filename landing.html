@@ -88,12 +88,12 @@
 
             <form action="" netlify>
                 <div class="d-flex gap-3 mb-3">
-                    <input class="text" type="text" id="name" placeholder="Name">
-                    <input class="text" type="text" id="email" placeholder="Email">
+                    <input class="text" type="text" id="name" placeholder="Name" required>
+                    <input class="text" type="text" id="email" placeholder="Email" required>
                     <input class="text" type="text" id="phone" placeholder="Phone (optional)">
                 </div>
                 <div class="d-flex gap-3">
-                    <textarea class="text" id="message" rows="4" placeholder="What can I help you with?"></textarea>
+                    <textarea class="text" id="message" rows="4" placeholder="What can I help you with?" required></textarea>
                 </div>
                 <button type="submit" placeholder="Submit" class="submit">
                     <span>Submit</span>
@@ -140,63 +140,22 @@
             </div>
         </section>
 
-        <section id="timer">
-            <p id="countdown"></p>
-            <script>
-                var deadline = new Date().getTime() + 10*60000; 
-                var display = document.querySelector('#countdown');
-
-                function formatTime (millisecondsRaw) {
-                    var seconds = (millisecondsRaw / 1000).toFixed(0);
-                    var minutes = Math.floor(seconds / 60);
-                    var hours = '';
-
-                    seconds = Math.floor(seconds % 60);
-
-                    seconds = (seconds >= 10) ? seconds : '0' + seconds;
-
-                    if (minutes > 59) {
-                        hours = Math.floor(minutes / 60);
-                        minutes = minutes - (hours * 60);
-                        minutes = (minutes >= 10) ? minutes : '0' + minutes;
-                    }
-
-                    if (hours != '') {
-                        return hours + ':' + minutes + ':' + seconds;
-                    }
-
-                    return minutes + ' : ' + seconds;
-                }
-
-                function countDown(time, element) {
-                    var remainingMilliseconds = time - Date.now();
-
-                    if (remainingMilliseconds > 0) {
-                        element.innerHTML = (
-                        '00 : 0' + formatTime(remainingMilliseconds)
-                        );
-                    } else {
-                        element.innerHTML = '<strong>Countdown ended</strong>';
-                    }
-
-                    setTimeout(function () {
-                        countDown(time, element);
-                    }, 60);
-                }
-
-                countDown(deadline, display);
-            </script>
+        <section id="timer" class="js-scroll">
+            <span class="background"></span>
+            <p id="countdown" class="js-scroll"></p>
         </section>
 
-        <section id="prices_area">
+        <h2 id="gift_header">I have something for you, actually...</h2>
+
+        <section id="prices_area" class="mb-5">
             <div class="column-left">
-                <p>Also, since you scrolled this far, you get <b>$325 off your first purchase.</b> You can use it on anything. The folks that used the contact form up top didn't get $325 off. There's a catch though; <b>gotta use this contact form before the 10 minute timer runs out.</b></p><br>
+                <p>Since you scrolled this far, you get <b>$325 off your first purchase.</b> You can use it on anything. The folks that used the contact form up top didn't get $325 off. There's a catch though; <b>gotta use this contact form before the 10 minute timer runs out.</b></p><br>
                 <p>You can scroll a bit more if you want to see my pricing, though. I’m very transparent about it. You probably have time. ;)</p>
                 <h3>Prices</h3>
 
-                <div class="row text-center align-items-start mb-5">
+                <div class="row text-center align-items-start">
                     <!-- Pricing Table-->
-                    <div class="col-lg-4 mb-5 mb-lg-0 price-card one-time bg-white p-5 rounded-lg shadow d-flex flex-column">
+                    <div class="mb-5 price-card one-time bg-white p-5 rounded-lg shadow d-flex flex-column">
                         <h1 class="h6 text-uppercase font-weight-bold mb-4">Websites</h1>
                         <h2 class="h1 font-weight-bold"><span class="text-medium">from</span> $299<span class="text-small font-weight-normal ml-2">/ mo</span></h2>
             
@@ -228,7 +187,7 @@
             
             
                     <!-- Pricing Table-->
-                    <div class="col-lg-4 mb-5 mb-lg-0 price-card one-time bg-white p-5 rounded-lg shadow d-flex flex-column">
+                    <div class="price-card one-time bg-white p-5 rounded-lg shadow d-flex flex-column mb-5">
                     <h1 class="h6 text-uppercase font-weight-bold mb-4">Google ad campaigns</h1>
                     <h2 class="h1 font-weight-bold"><span class="text-medium">from</span> $599<span class="text-small font-weight-normal ml-2">/ mo</span></h2>
             
@@ -261,13 +220,13 @@
             
             
                     <!-- Pricing Table-->
-                    <div class="col-lg-4 price-card one-time bg-white p-5 free-package rounded-lg shadow d-flex flex-column">
+                    <div class="price-card one-time bg-white p-5 free-package rounded-lg shadow d-flex flex-column">
                         <h1 class="h6 text-uppercase font-weight-bold mb-4">Funnel pages</h1>
                         <h2 class="h1 font-weight-bold">$649<span class="text-small font-weight-normal ml-2">/ one-time</span></h2>
             
                         <div class="custom-separator my-4 mx-auto"></div>
             
-                        <p>Funnels are where users land when they click your ads. They are designed to entice users into taking action with your business. Our funnels are always custom designed and coded by hand to represent your business well, and maximize conversions.</p>
+                        <p style="margin-bottom: 2rem;">Funnels are where users land when they click your ads. They are designed to entice users into taking action with your business. Our funnels are always custom designed and coded by hand to represent your business well, and maximize conversions.</p>
             
                         <a href="contact.html" class="btn btn-primary btn-block p-2 shadow rounded-pill mt-auto"><span>Get Started</span></a>
                     </div>
@@ -275,17 +234,19 @@
             
                 </div>
             </div>
-            <div class="column-right">
-                <h4>Drop me a line</h4>
-                <p>I promise I don't bite</p>
+            <div class="column-right sticky">
+                <header>
+                    <h4>Drop me a line</h4>
+                    <p>I promise I don't bite</p>
+                </header>
                 <form id="contact_2" action="" netlify>
-                    <input class="text" type="text" id="name" placeholder="Name">
-                    <input class="text" type="text" id="email" placeholder="Email">
+                    <input class="text" type="text" id="name" placeholder="Name" required>
+                    <input class="text" type="text" id="email" placeholder="Email" required>
                     <input class="text" type="text" id="phone" placeholder="Phone (optional)">
-                    <textarea class="text" id="message" rows="4" placeholder="What can I help you with?"></textarea>
-
+                    <textarea class="text" id="message" rows="4" placeholder="What can I help you with?" required></textarea>
+                    <h5>Your discount (yes, for real):</h5>
                     <div class="wrapper">
-                        <input type="radio" name="select" id="option-1" checked>
+                        <input type="radio" name="select" id="option-1">
                         <input type="radio" name="select" id="option-2">
                         <label for="option-1" class="option option-1">
                         <div class="dot"></div>

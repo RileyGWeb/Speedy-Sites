@@ -18,7 +18,6 @@ $(document).ready(function() {
             $(".close-on-click").removeClass("hidden");
             numberChecked = 0;
         }
-        console.log(numberChecked);
 
     }
     function checkboxHide() {
@@ -57,7 +56,6 @@ $(document).ready(function() {
 
 
     $(window).scroll(function() {
-        console.log( $(window).scrollTop() );
         var windowScrollHeight = $(window).scrollTop();
         if ( windowScrollHeight > 365 ) {
             if ( $("#mobile_nav").hasClass("rounded-bottom") == false ) {
@@ -78,42 +76,122 @@ $(document).ready(function() {
 
     const scrollElements = document.querySelectorAll(".js-scroll");
 
-const elementInView = (el, dividend = 1) => {
-  const elementTop = el.getBoundingClientRect().top;
+    const elementInView = (el, dividend = 1) => {
+      const elementTop = el.getBoundingClientRect().top;
 
-  return (
-    elementTop <=
-    (window.innerHeight || document.documentElement.clientHeight) / dividend
-  );
-};
+      return (
+        elementTop <=
+        (window.innerHeight || document.documentElement.clientHeight) / dividend
+      );
+    };
 
-const elementOutofView = (el) => {
-  const elementTop = el.getBoundingClientRect().top;
+    const elementOutofView = (el) => {
+      const elementTop = el.getBoundingClientRect().top;
 
-  return (
-    elementTop > (window.innerHeight || document.documentElement.clientHeight)
-  );
-};
+      return (
+        elementTop > (window.innerHeight || document.documentElement.clientHeight)
+      );
+    };
 
-const displayScrollElement = (element) => {
-  element.classList.add("scrolled");
-};
+    var beenRun = false;
+    const displayScrollElement = (element) => {
+      element.classList.add("scrolled");
+      if (beenRun == false) {
+        var deadline = new Date().getTime() + 10*60000; 
+        countDown(deadline, display);
+      }
+    };
 
-const hideScrollElement = (element) => {
-  element.classList.remove("scrolled");
-};
+    const hideScrollElement = (element) => {
+      element.classList.remove("scrolled");
+    };
 
-const handleScrollAnimation = () => {
-  scrollElements.forEach((el) => {
-    if (elementInView(el, 1.25)) {
-      displayScrollElement(el);
-    } else if (elementOutofView(el)) {
-      hideScrollElement(el)
+    const handleScrollAnimation = () => {
+      scrollElements.forEach((el) => {
+        if (elementInView(el, 1.25)) {
+          displayScrollElement(el);
+        } else if (elementOutofView(el)) {
+          hideScrollElement(el)
+        }
+      })
     }
-  })
-}
 
-window.addEventListener("scroll", () => { 
-  handleScrollAnimation();
-});
+    window.addEventListener("scroll", () => { 
+      handleScrollAnimation();
+    });
+
+      var display = document.querySelector('#countdown');
+
+      function formatTime (millisecondsRaw) {
+          var seconds = (millisecondsRaw / 1000).toFixed(0);
+          var minutes = Math.floor(seconds / 60);
+          var hours = '';
+
+          seconds = Math.floor(seconds % 60);
+
+          seconds = (seconds >= 10) ? seconds : '0' + seconds;
+
+          if (minutes > 59) {
+              hours = Math.floor(minutes / 60);
+              minutes = minutes - (hours * 60);
+              minutes = (minutes >= 10) ? minutes : '0' + minutes;
+          }
+
+          if (hours != '') {
+              return hours + ':' + minutes + ':' + seconds;
+          }
+
+          return minutes + ' : ' + seconds;
+      }
+
+      function countDown(time, element) {
+          var remainingMilliseconds = time - Date.now();
+
+          if (remainingMilliseconds > 0) {
+              element.innerHTML = (
+              '00 : 0' + formatTime(remainingMilliseconds)
+              );
+          } else {
+              element.innerHTML = '<strong>Countdown ended</strong>';
+          }
+          beenRun = true;
+
+          setTimeout(function () {
+              countDown(time, element);
+          }, 1000);
+
+        
+      }
+
+      // Dynamic styling for the colorful counter
+      
+
+      window.onscroll = function() {fixedTimer()};
+      window.onresize = function() {fixedTimer()};
+
+      function fixedTimer() {
+        var mainContainer = document.querySelector('main');
+        var pricesContainer = document.getElementById('prices_area');
+  
+        var mainWidth = mainContainer.offsetWidth;
+        var pricesWidth = pricesContainer.offsetWidth;
+        
+        var timer = document.querySelector("#timer");
+        var timerBackground = document.querySelector("#timer .background");
+
+        var sticky = timer.offsetTop - 75;
+  
+        var marginLeft = (mainWidth - pricesWidth) / 2;
+
+        timerBackground.style.width = mainWidth + "px";
+        if (window.pageYOffset > sticky) {
+          timer.classList.add("sticky");
+          document.getElementById("gift_header").style.marginTop = "calc(12rem + 75px)";
+          timer.style.width = mainWidth + "px";
+          timer.style.marginLeft = "-" + marginLeft + "px";
+        } else {
+          // timer.classList.remove("sticky");
+          // document.getElementById("gift_header").style.marginTop = "6rem";
+        }
+      }
 });
