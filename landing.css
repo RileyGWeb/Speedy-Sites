@@ -342,6 +342,9 @@ hr {
     margin: 2rem 0;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
+#prices_area .sneaky-text-block {
+    display: none;
+}
 
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -424,6 +427,13 @@ hr {
     #splash h1 {
         font-size: 68px;
     }
+
+    section#timer.sticky {
+        top: 68px;
+    }
+    section#splash.sticky {
+        padding-top: 4rem;
+    }
 }
 @media only screen and (min-width: 578px) and (max-width: 768px) {
     .price-card {
@@ -469,6 +479,48 @@ hr {
     #contact_1 form > div input {
         width: calc(100% - 20px);
     }
+
+    #more_info .question {
+        flex-direction: column;
+    }
+    #more_info .question h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    #more_info #desktop .question > * {
+        width: 100%;
+    }
+
+    .ad-landing hr {
+        margin: 32px 0;
+    }
+
+    #gift_header {
+        margin: 6rem 2rem 0rem 2rem
+    }
+
+    #prices_area {
+        flex-direction: column-reverse;
+    }
+    #prices_area > * {
+        width: 100%;
+    }
+    #prices_area .text-block {
+        display: none;
+    }
+    #prices_area .sneaky-text-block {
+        display: block;
+        margin-bottom: 2rem;
+    }
+    #prices_area .column-right {
+        position: static;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    /* massive hack, don't ever do this */
+    .container {
+        max-width: 600px!important;
+    }
 }
 @media only screen and (max-width: 425px) {
     .free-package .price-card {
@@ -509,5 +561,17 @@ hr {
     #prices .row {
         padding: 0!important;
     }
+
+    section:not(#timer) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    footer ul.menu-buttons {
+        padding: 0;
+    }
 }
 /* end price cards */
+
+.btn-plain {
+    padding: 0 1rem 0 0;
+}

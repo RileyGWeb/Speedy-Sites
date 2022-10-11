@@ -186,9 +186,10 @@ $(document).ready(function() {
         timerBackground.style.width = mainWidth + "px";
         if (window.pageYOffset > sticky) {
           timer.classList.add("sticky");
-          document.getElementById("gift_header").style.marginTop = "calc(12rem + 75px)";
+          document.getElementById("gift_header").style.marginTop = "calc(8rem + 75px)";
           timer.style.width = mainWidth + "px";
           timer.style.marginLeft = "-" + marginLeft + "px";
+          document.getElementById("splash").classList.add("sticky");
         } else {
           // timer.classList.remove("sticky");
           // document.getElementById("gift_header").style.marginTop = "6rem";
