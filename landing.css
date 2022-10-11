@@ -57,12 +57,12 @@ form textarea {
 }
 
 /* form */
-#contact_1 > * {
+#contact_splash > * {
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
 }
-#contact_1 form input {
+#contact_splash form input {
     width: 100%;
 }
 #contact_2 > * {
@@ -345,7 +345,15 @@ hr {
 #prices_area .sneaky-text-block {
     display: none;
 }
-
+.ad-landing .or_seperator {
+    display: flex;
+    align-items: center;
+    margin: 40px 0!important;
+}
+.ad-landing .or_seperator hr {
+    background: linear-gradient(90deg, rgba(198, 194, 225, 0.7) 0.07%, #C6C2E1 53.2%, rgba(198, 194, 225, 0.7) 100.07%);
+    margin: 0 1rem;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .free-package .price-card {
@@ -473,10 +481,10 @@ hr {
         width: 100%;
     }
 
-    #contact_1 form > div {
+    #contact_splash form > div {
         flex-direction: column;
     }
-    #contact_1 form > div input {
+    #contact_splash form > div input {
         width: calc(100% - 20px);
     }
 
@@ -514,6 +522,13 @@ hr {
     }
     #prices_area .column-right {
         position: static;
+    }
+
+    .calendar-contain {
+        flex-direction: column;
+    }
+    .calendar-contain .btn-primary {
+        margin-top: 1.5rem;
     }
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
