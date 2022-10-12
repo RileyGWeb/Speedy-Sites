@@ -88,12 +88,12 @@
 
             <form id="contact_1" action="" netlify>
                 <div class="d-flex gap-3 mb-3">
-                    <input class="text" type="text" id="name" placeholder="Name" required>
-                    <input class="text" type="text" id="email" placeholder="Email" required>
-                    <input class="text" type="text" id="phone" placeholder="Phone (optional)">
+                    <input class="text" type="text" id="name" name="name" placeholder="Name" required>
+                    <input class="text" type="text" id="email" name="email" placeholder="Email" required>
+                    <input class="text" type="text" id="phone" name="phone" placeholder="Phone (optional)">
                 </div>
                 <div class="d-flex gap-3">
-                    <textarea class="text" id="message" rows="4" placeholder="What can I help you with?" required></textarea>
+                    <textarea class="text" id="message" rows="4" name="message" placeholder="What can I help you with?" required></textarea>
                 </div>
                 <button type="submit" placeholder="Submit" class="submit">
                     <span>Submit</span>
@@ -262,14 +262,14 @@
                     <p>I promise I don't bite</p>
                 </header>
                 <form id="contact_2" action="" netlify>
-                    <input class="text" type="text" id="name" placeholder="Name" required>
-                    <input class="text" type="text" id="email" placeholder="Email" required>
-                    <input class="text" type="text" id="phone" placeholder="Phone (optional)">
-                    <textarea class="text" id="message" rows="4" placeholder="What can I help you with?" required></textarea>
+                    <input class="text" type="text" name="name" id="name" placeholder="Name" required>
+                    <input class="text" type="text" name="phone" id="email" placeholder="Email" required>
+                    <input class="text" type="text" name="email" id="phone" placeholder="Phone (optional)">
+                    <textarea class="text" id="message" rows="4" placeholder="What can I help you with?" name="message" required></textarea>
                     <h5>Your discount (yes, for real):</h5>
                     <div class="wrapper">
-                        <input type="radio" name="select" id="option-1">
-                        <input type="radio" name="select" id="option-2">
+                        <input type="radio" name="select-0" id="option-1">
+                        <input type="radio" name="select-325" id="option-2">
                         <label for="option-1" class="option option-1">
                         <div class="dot"></div>
                             <span>$0 off</span>
