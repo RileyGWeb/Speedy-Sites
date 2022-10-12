@@ -45,6 +45,9 @@ table {
 .hidden {
     display: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 /* -------- Fonts -------- */
 /* thai */
 @font-face {
