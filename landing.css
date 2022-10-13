@@ -85,6 +85,7 @@ form textarea {
 }
 #dropdown.shown {
     max-height: 700px;
+    overflow: visible;
 }
 #dropdown_button {
     height: 60px;
