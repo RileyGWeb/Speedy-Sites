@@ -326,11 +326,19 @@ section#timer p {
   
   .text-uppercase {
     letter-spacing: 0.2em;
+    text-transform: uppercase;    
   }
   .h6, h6 {
     font-size: 1rem;
 }
-
+.price-card {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    display: flex!important;
+    border-radius: 1rem !important;
+    padding: 3rem!important;
+    margin-bottom: 3rem!important;
+    flex-direction: column!important;
+}
 .price-card img {
     height: 16px;
     margin-bottom: -2px;
