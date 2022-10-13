@@ -328,6 +328,9 @@ section#timer p {
     letter-spacing: 0.2em;
     text-transform: uppercase;    
   }
+  .gap-3 {
+    gap: 1rem;
+  }
   .h6, h6 {
     font-size: 1rem;
 }
