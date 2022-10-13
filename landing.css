@@ -430,7 +430,13 @@ hr {
         flex-direction: column;
     }
     #splash .person-image-container {
-        margin: 1rem auto!important;
+        margin: 2rem auto 1rem auto!important;
+        height: 300px;
+        width: 300px;
+    }
+    #splash .person-image-container img {
+        height: 300px;
+        width: 300px;
     }
     #splash h1 {
         font-size: 68px;
