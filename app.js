@@ -196,4 +196,12 @@ $(document).ready(function() {
           // document.getElementById("gift_header").style.marginTop = "6rem";
         }
       }
+
+      var dropdownButton = document.querySelector('#dropdown_button');
+      var dropdown = document.querySelector('#dropdown');
+
+      dropdownButton.addEventListener("click", function() {
+        dropdown.classList.add('shown');
+        dropdownButton.classList.add('shown');
+      })
 });
